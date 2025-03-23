@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forja Oeste</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <a href="../index.html">
+                <h1>Forja Oeste</h1>
+            </a>
+            <h3>Herrería y trabajos de soldadura</h3>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+
+                    <li>
+                        <a href="cursos.html">Cursos</a>
+                    </li>
+
+                    <li>
+                        <a href="trabajos.html">Trabajos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <picture>
+                <img src="forja.jpeg" alt="forja-oeste">
+            </picture>
+        </div>
+
+        <div>
+            <h3>Inscribirse al curso</h3>
+            <form action="exito.html" method="get">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" placeholder="Tu nombre" id="nombre" required>
+                </div>
+
+                <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" placeholder="Tu email" id="mail" required>
+                </div>
+
+                <div>
+                    <!-- <label for="lista">Me comunico por:</label> -->
+                    <select name="lista" id="lista">
+                        <option value="" selected disabled>Seleccione modalidad</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="virtual">Virtual</option>
+                        <option value="mixta">Mixta</option>
+                    </select>
+                </div>
+
+                <div>
+                    <input type="submit" value="Inscribirse">
+                    <input type="reset" value="Limpiar">
+                </div>
+
+                <div>
+                    <label for="nuevo">Nuevo</label>
+                    <input type="radio" name="estado" id="nuevo">
+                </div>
+
+                <div>
+                    <label for="usado">Usado</label>
+                    <input type="radio" name="estado" id="usado">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <a href="nosotros.html">Sobre nosotros</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+
+                <li>
+                    <a href="cursos.html">Cursos</a>
+                </li>
+
+                <li>
+                    <a href="trabajos.html">Trabajos</a>
+                </li>
+
+                <li>
+                    <a href="#">Volver arriba</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <span>Datos de contacto</span>
+        </div>
+        <span>© 2025 Rodrigo Gómez. Todos los derechos reservados</span>
+    </footer>
+</body>
+
+</html>

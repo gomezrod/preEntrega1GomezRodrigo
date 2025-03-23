@@ -1,0 +1,81 @@
+/** GLOBALES **/
+
+/*Reset*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding :0;
+}
+
+:root {
+    --main-color: #606c38;
+    --main-color-secondary: #fefae0;
+    --main-text-color: #dda15e;
+    --main-text-light: #bc6c25;
+    --main-font: "Roboto",sans-serif;
+}
+ 
+
+body {
+    background-color: var(--main-color);
+    color: var(--main-color-secondary);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: var(--main-font);
+    font-size: 62.5%;
+}
+
+.logo {
+    background-image: url('../img/banner.webp');
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color-secondary);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+/** LAYOUT **/
+
+/*Header*/
+.header{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.login svg{
+    width: 25px;
+    height: 25px;
+}   
+
+.logo {
+text-align: left;
+}
+/* FOOTER */
+
+.redes img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+/** COMPONENTS **/
+.boton {
+    border-radius: 50% ;
+}
+
+.boton-busqueda svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+article img {
+    height: 100px;
+}
+
+/** PAGES **/
