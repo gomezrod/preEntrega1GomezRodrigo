@@ -9,131 +9,140 @@
 </head>
 
 <body>
-<header>
-    <div class="logo">
-        <!-- <img src="img/banner.webp" alt="Imagen del banner: un soldador en proceso de soldadura"> -->
-        <a href="../index.html">
-            <h1>Forja Oeste</h1>
-        </a>
-        <h3>Herrería y trabajos de soldadura</h3>
-    </div>
-
-    <div>
-        <label for="buscador"></label>
-        <input type="text" , id="buscador" , placeholder="Buscar">
-        <button class="boton-busqueda">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-        </button>
-    </div>
-
-    <div class="login">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-        </svg>
-    </div>
-
-    <div>
-        <img src="user" alt="">
-    </div>
-    <div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="nosotros.html">Sobre nosotros</a>
-                </li>
-
-                <li>
-                    <a href="cursos.html">Cursos</a>
-                </li>
-
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-
-                <li>
-                    <a href="faq.html">FAQ</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-    <main>
-        <div>
-            <h3>Nuestros cursos</h3>
+    <header>
+        <div class="banner">
+    
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.webp" alt="Imagen del logo de la empresa: figura de un soldador soldando">
+                    <h1>Forja Oeste</h1>
+                    <h3>Herrería y trabajos de soldadura</h3>
+                </a>
+            </div>
+    
+            <label for="buscador"></label>
+            <input type="text" , id="buscador" , placeholder="Buscar">
+            <button class="boton-busqueda">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </button>
+    
+            <div class="login">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+            </div>
         </div>
-        <article>
-            <div>
-                <img src="curso1.jpeg" alt="curso1">
-            </div>
+    
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="nosotros.html">Sobre nosotros</a>
+                    </li>
+    
+                    <li>
+                        <a href="cursos.html">Cursos</a>
+                    </li>
+    
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+    
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+    
+                    <li>
+                        <a href="consultas.html">Consultas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi corrupti placeat nesciunt praesentium error asperiores?</p>
-            </div>
+    <main>
+        <section>
+            <h2>Nuestros cursos</h2>
+            <article>
+                    <h3>Texto 1</h3>
+                    <img src="../img/img_1.webp" alt="Imagen de curso 1: soldador soldando">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi corrupti placeat nesciunt praesentium error asperiores? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quas similique sequi doloremque nobis consequuntur. Temporibus eius accusantium tempore, assumenda, earum cumque eos harum quidem iste perspiciatis facilis ipsum tenetur.</p>
+                    <button>
+                        <a href="#">Inscribirse</a>
+                    </button>
+            </article>
 
-            <div>
-                <button>
-                    <a href="inscripcion.html#curso1">Inscribirse</a>
-                </button>
-            </div>
-        </article>
-
-        <article>
-            <div>
-                <img src="curso2.jpeg" alt="curso2">
-            </div>
-            
-            <div>
+            <article>
+                <h3>Texto 2</h3>
+                <img src="../img/img_2.jpg" alt="Imagen de curso 2: soldador soldando">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil animi corrupti placeat nesciunt praesentium error
-                    asperiores?</p>
-            </div>
-            
-            <div>
+                    asperiores?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto quia possimus laudantium molestiae voluptatem dicta quidem, numquam doloremque doloribus nihil adipisci at dolorum, veniam modi itaque dignissimos illum! Eius, quaerat!</p>
                 <button>
-                    <a href="inscripcion.html#curso2">Inscribirse</a>
+                    <a href="#">Inscribirse</a>
                 </button>
-            </div>
-        </article>
+            </article>
+        </section>
     </main>
 
     <footer>
         <div>
-            <ul>
-                <li>
-                    <a href="nosotros.html">Sobre nosotros</a>
-                </li>
-            
-                <li>
-                    <a href="cursos.html">Cursos</a>
-                </li>
-            
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-            
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            
-                <li>
-                    <a href="faq.html">FAQ</a>
-                </li>
-
-                <li>
-                    <a href="#">Volver arriba</a>
-                </li>
-            </ul>
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="nosotros.html"><img src="../img/nosotros.svg"
+                                alt="Ícono de un grupo de personas, representando la sección 'nosotros'">Sobre nosotros</a>
+                    </li>
+    
+                    <li>
+                        <a href="cursos.html"><img src="../img/cursos.svg"
+                                alt="Ícono de un libro abierto, representando la sección 'cursos'">Cursos</a>
+                    </li>
+    
+                    <li>
+                        <a href="servicios.html"><img src="../img/servicios.svg"
+                                alt="Ícono de unas herramientas, representando la sección 'servicios'">Servicios</a>
+                    </li>
+    
+                    <li>
+                        <a href="contacto.html"><img src="../img/contacto.svg"
+                                alt="Ícono de un sobre abierto, representando la sección 'contacto'">Contacto</a>
+                    </li>
+    
+                    <li>
+                        <a href="consultas.html"><img src="../img/consultas.svg"
+                                alt="Ícono de un signo de pregunta, representando la sección 'consultas'">Consultas</a>
+                    </li>
+    
+                    <li>
+                        <a href="#">Volver arriba</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     
+        <div class="redes">
+            <div>
+                <a href="https://linkedin.com"><img src="../img/linkedin.svg" alt="Logo de Linkedin"></a>
+            </div>
+    
+            <div>
+                <a href="https://instagram.com"><img src="../img/instagram.svg" alt="Logo de Instagram"></a>
+            </div>
+    
+            <div>
+                <a href="https://x.com"><img src="../img/twitter-alt.svg" alt="Logo de X"></a>
+            </div>
+    
+            <div>
+                <a href="https://youtube.com"><img src="../img/youtube.svg" alt="Logo de YouTube"></a>
+            </div>
+        </div>
         <span>© 2025 Rodrigo Gómez. Todos los derechos reservados</span>
     </footer>
 </body>

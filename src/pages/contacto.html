@@ -1,180 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forja Oeste</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forja Oeste</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
 
-<body>
-    
-<header>
-    <div class="logo">
-        <!-- <img src="img/banner.webp" alt="Imagen del banner: un soldador en proceso de soldadura"> -->
-        <a href="../index.html">
-            <h1>Forja Oeste</h1>
-        </a>
-        <h3>Herrería y trabajos de soldadura</h3>
-    </div>
-
-    <div>
-        <label for="buscador"></label>
-        <input type="text" , id="buscador" , placeholder="Buscar">
-        <button class="boton-busqueda">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-        </button>
-    </div>
-
-    <div class="login">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-        </svg>
-    </div>
-
-    <div>
-        <img src="user" alt="">
-    </div>
-    <div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="nosotros.html">Sobre nosotros</a>
-                </li>
-
-                <li>
-                    <a href="cursos.html">Cursos</a>
-                </li>
-
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-
-                <li>
-                    <a href="consultas.html">Consultas</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-    <main>
-        <div>
-            <picture>
-                <img src="forja.jpeg" alt="forja-oeste">
-            </picture>
-        </div>
+    <body>
+        <header>
+            <div class="banner">
+                <div class="logo">
+                    <a href="../index.html">
+                        <img src="../img/logo.webp" alt="Imagen del logo de la empresa: figura de un soldador soldando">
+                        <h1>Forja Oeste</h1>
+                        <h3>Herrería y trabajos de soldadura</h3>
+                    </a>
+                </div>
         
-<div>
-    <h3>¿Dónde estamos ubicados?</h3>
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1229.8929191657478!2d-58.637431058364236!3d-34.61881630747109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sunahur!5e0!3m2!1ses-419!2sar!4v1742764233120!5m2!1ses-419!2sar"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-
-        <div>
-            <h3>Contactanos</h3>
-            <form id="formulario">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input class="input-texto" type="text" placeholder="" id="nombre" required>
+                <label for="buscador"></label>
+                <input type="text" , id="buscador" , placeholder="Buscar">
+                <button class="boton-busqueda">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </button>
+        
+                <div class="login">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
                 </div>
-
-                <div>
-                    <label for="email">Mail:</label>
-                    <input type="email" placeholder="" id="email" required>
-                </div>
-
-                <div>
-                    <label for="email">Teléfono:</label>
-                    <input type="email" placeholder="" id="email" required>
-                </div>
-
-                <div>
-                    <!-- <label for="lista">Me comunico por:</label> -->
-                    <select name="lista" id="modalidad">
-                        <option value="" selected disabled>Me contacto por...</option>
-                        <option value="Cursos">Cursos</option>
-                        <option value="Presupuesto">Presupuesto</option>
-                        <option value="Otro">Otro</option>
-                    </select>
-                </div>
-                
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea name="mensaje" id="mensaje" placeholder="Dejanos tu mensaje" ></textarea>
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar">
-                </div>
-
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <div>
-            <ul>
-                <li>
-                    <a href="nosotros.html">Sobre nosotros</a>
-                </li>
-                
-                <li>
-                    <a href="cursos.html">Cursos</a>
-                </li>
-                
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                
-                <li>
-                    <a href="consultas.html">Consultas</a>
-                </li>
-
-                <li>
-                    <a href="#">Volver arriba</a>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <div>
-                <img src="https://linkedin.com" alt="Logo de Linkedin">
             </div>
-
+        
             <div>
-                <img src="https://instagram.com" alt="Logo de Instagram">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="nosotros.html">Sobre nosotros</a>
+                        </li>
+        
+                        <li>
+                            <a href="cursos.html">Cursos</a>
+                        </li>
+        
+                        <li>
+                            <a href="servicios.html">Servicios</a>
+                        </li>
+        
+                        <li>
+                            <a href="contacto.html">Contacto</a>
+                        </li>
+        
+                        <li>
+                            <a href="consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
+        <main>
+            <section>
+                <article>
+                    <h3>¿Dónde estamos ubicados?</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1229.8929191657478!2d-58.637431058364236!3d-34.61881630747109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sunahur!5e0!3m2!1ses-419!2sar!4v1742764233120!5m2!1ses-419!2sar"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+                
+                <article>
+                    <h3>Contactanos</h3>
+                    <form id="formulario">
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input class="input-texto" type="text" placeholder="" id="nombre" required>
+                        </div>
+
+                        <div>
+                            <label for="email">Mail:</label>
+                            <input type="email" placeholder="" id="email" required>
+                        </div>
+
+                        <div>
+                            <label for="telefono">Teléfono:</label>
+                            <input type="number" placeholder="" id="telefono" required>
+                        </div>
+
+                        <div>
+                            <label for="lista">Me contacto por:</label>
+                            <select name="lista" id="modalidad">
+                                <option value="" selected disabled></option>
+                                <option value="Cursos">Cursos</option>
+                                <option value="Presupuesto">Presupuesto</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea name="mensaje" id="mensaje" placeholder="Dejanos tu mensaje" ></textarea>
+                        </div>
+
+                        <div>
+                            <input type="submit" value="Enviar">
+                        </div>
+
+                    </form>
+                </article>
+            </section>
+        </main>
+
+        <footer>
             <div>
-                <img src="https://x.com" alt="Logo de X">
+                <nav class="footer-nav">
+                    <ul>
+                        <li>
+                            <a href="nosotros.html"><img src="../img/nosotros.svg"
+                                    alt="Ícono de un grupo de personas, representando la sección 'nosotros'">Sobre nosotros</a>
+                        </li>
+        
+                        <li>
+                            <a href="cursos.html"><img src="../img/cursos.svg"
+                                    alt="Ícono de un libro abierto, representando la sección 'cursos'">Cursos</a>
+                        </li>
+        
+                        <li>
+                            <a href="servicios.html"><img src="../img/servicios.svg"
+                                    alt="Ícono de unas herramientas, representando la sección 'servicios'">Servicios</a>
+                        </li>
+        
+                        <li>
+                            <a href="contacto.html"><img src="../img/contacto.svg"
+                                    alt="Ícono de un sobre abierto, representando la sección 'contacto'">Contacto</a>
+                        </li>
+        
+                        <li>
+                            <a href="consultas.html"><img src="../img/consultas.svg"
+                                    alt="Ícono de un signo de pregunta, representando la sección 'consultas'">Consultas</a>
+                        </li>
+        
+                        <li>
+                            <a href="#">Volver arriba</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-
-            <div>
-                <a href="https://youtube.com"><img src="" alt="Logo de Youtube"></a>
+        
+            <div class="redes">
+                <div>
+                    <a href="https://linkedin.com"><img src="../img/linkedin.svg" alt="Logo de Linkedin"></a>
+                </div>
+        
+                <div>
+                    <a href="https://instagram.com"><img src="../img/instagram.svg" alt="Logo de Instagram"></a>
+                </div>
+        
+                <div>
+                    <a href="https://x.com"><img src="../img/twitter-alt.svg" alt="Logo de X"></a>
+                </div>
+        
+                <div>
+                    <a href="https://youtube.com"><img src="../img/youtube.svg" alt="Logo de YouTube"></a>
+                </div>
             </div>
-        </div>
-        <span>© 2025 Rodrigo Gómez. Todos los derechos reservados</span>
-    </footer>
-
-    <script src="../js/script.js"></script>
-</body>
+            <span>© 2025 Rodrigo Gómez. Todos los derechos reservados</span>
+        </footer>
+    </body>
 
 </html>

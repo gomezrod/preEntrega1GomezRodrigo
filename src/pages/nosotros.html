@@ -10,120 +10,210 @@
 
 <body>
 
-<header>
-    <div class="logo">
-        <!-- <img src="img/banner.webp" alt="Imagen del banner: un soldador en proceso de soldadura"> -->
-        <a href="../index.html">
-            <h1>Forja Oeste</h1>
-        </a>
-        <h3>Herrería y trabajos de soldadura</h3>
-    </div>
-
-    <div>
-        <label for="buscador"></label>
-        <input type="text" , id="buscador" , placeholder="Buscar">
-        <button class="boton-busqueda">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round"
-                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-            </svg>
-        </button>
-    </div>
-
-    <div class="login">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="size-6">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-        </svg>
-    </div>
-
-    <div>
-        <img src="user" alt="">
-    </div>
-    <div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="nosotros.html">Sobre nosotros</a>
-                </li>
-
-                <li>
-                    <a href="cursos.html">Cursos</a>
-                </li>
-
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-
-                <li>
-                    <a href="faq.html">FAQ</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+    <header>
+        <div class="banner">
+    
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../img/logo.webp" alt="Imagen del logo de la empresa: figura de un soldador soldando">
+                    <h1>Forja Oeste</h1>
+                    <h3>Herrería y trabajos de soldadura</h3>
+                </a>
+            </div>
+    
+            <label for="buscador"></label>
+            <input type="text" , id="buscador" , placeholder="Buscar">
+            <button class="boton-busqueda">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+            </button>
+    
+            <div class="login">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>
+            </div>
+        </div>
+    
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="nosotros.html">Sobre nosotros</a>
+                    </li>
+    
+                    <li>
+                        <a href="cursos.html">Cursos</a>
+                    </li>
+    
+                    <li>
+                        <a href="servicios.html">Servicios</a>
+                    </li>
+    
+                    <li>
+                        <a href="contacto.html">Contacto</a>
+                    </li>
+    
+                    <li>
+                        <a href="consultas.html">Consultas</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
-        <div>
-            <div>
-                <picture>
-                    <img src="forja-oeste.jpg" alt="forja-oeste">
-                </picture>
-            </div>
-            <div>
-                <h3>Nuestra empresa</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus nulla id, ut corrupti cumque
-                    quos et enim ab, explicabo, iure asperiores ipsam porro. Distinctio repellendus iste
-                    reprehenderit quidem odit cupiditate.</p>
-            </div>
+        <section>
+            <article>
+                <ul class="lista-nosotros">
+                    <li><a href="nosotros.html#video-institucional">Nuestra Empresa</a></li>
+                        <ul>
+                            <li><a href="nosotros.html#historia">Historia</a></li>
+                                <ul>
+                                    <li><a href="nosotros.html#fundacion">Fundación</a></li>
+                                    <li><a href="nosotros.html#hitos">Hitos</a></li>
+                                </ul>
+                            <li><a href="nosotros.html#equipo">Nuestro Equipo</a></li>
+                                <ul>
+                                    <li><a href="nosotros.html#liderazgo">Liderazgo</a></li>
+                                    <li><a href="nosotros.html#departamentos">Departamentos</a></li>
+                                </ul>
+                            <li><a href="nosotros.html#mision">Misión y Valores</a></li>
+                            <li><a href="nosotros.html#testimonios">Testimonios</a></li>
+                        </ul>
+                </ul>
+            </article>
 
-            <!-- <div>
-                <video src="" controls></video>
-            </div> -->
-
-            <div>
+            <article id="video-institucional">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y6GS8yc23t0?si=POsVhtA6YqQZl25A"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+            </article>
+        </section>
 
+        <section>
+            <article>
+                <h2 id="historia">Historia</h2>
 
+                <div id="fundacion">
+                    <h3>Fundación</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum beatae ullam quidem, odit esse cupiditate possimus
+                        tempora voluptatibus odio reprehenderit sint repudiandae laborum ipsa nisi, alias ea dolorum architecto minus?
+                        Molestiae expedita eaque sapiente laborum ipsam animi at corporis, officia minima libero ea odio aspernatur ab iusto
+                        perspiciatis quidem, minus voluptatem? Voluptate suscipit rerum voluptatibus enim? Dolores a eligendi expedita!
+                        Nisi facere mollitia laborum incidunt architecto veritatis a culpa magnam reprehenderit alias laudantium aperiam
+                        molestiae, dicta dolorum ullam suscipit placeat fugit dignissimos fuga dolor. Qui vero quo quia vel deserunt.</p>
+                        <img src="../img/fundacion.jpg" alt="Fotografía antigua de la empresa">
+                </div>
 
-        </div>
+                <div id="hitos">
+                    <h3>Hitos</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, repudiandae! Ducimus quo tempora magni, earum sed, sint qui optio mollitia hic culpa ullam laudantium nostrum perferendis provident quidem officiis non.
+                    Accusantium nobis repudiandae a dolorem asperiores laboriosam voluptate facilis quas veritatis quia inventore, culpa pariatur natus. Repudiandae quis ullam vero, cupiditate, quas, praesentium autem reprehenderit incidunt accusamus blanditiis aliquam laudantium?
+                    Est, aperiam quos quidem labore assumenda cupiditate? Explicabo dicta sequi quam natus non impedit blanditiis vitae aperiam sunt tenetur, hic totam, laudantium cupiditate quis consectetur? Quis voluptatibus qui voluptatum sed?</p>
+                    <img src="../img/hitos.webp" alt="Flecha en zig-zag, compuesta por bloques">
+                </div>
+            </article>
+
+            <article>
+                <h2 id="equipo">Nuestro Equipo</h2>
+
+                <div id="liderazgo">
+                    <h3>Liderazgo</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt saepe, magni dolore corrupti a ut qui quam at, modi laborum ducimus aspernatur tenetur, repellat facere nisi explicabo? Repudiandae, porro id.
+                    Sunt a incidunt officia mollitia accusamus quisquam eius, reiciendis totam consequatur ullam laudantium facere quo, excepturi similique qui earum culpa expedita ipsa beatae ab reprehenderit recusandae eaque minus? Accusamus, quibusdam.
+                    Quaerat incidunt veniam voluptate qui provident libero laudantium vero deleniti doloribus, dicta blanditiis molestias ullam asperiores cum magni dolorem nemo tenetur dolorum illo saepe ut. Consequatur, dolores! At, deserunt nam!</p>
+                    <img src="../img/liderazgo.jpg" alt="Organigrama vertical de la jerarquía de la empresa">
+                </div>
+
+                <div id="departamentos">
+                    <h3>Departamentos</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, impedit omnis accusantium illo fugit beatae voluptatum praesentium soluta sapiente, asperiores itaque reiciendis laborum, suscipit autem ducimus quidem veniam molestias voluptates.
+                    Cupiditate quaerat dignissimos unde, quibusdam at earum eveniet temporibus ipsa. Ex fugiat quia dolor maiores provident veniam hic vel autem itaque ea. Est, doloremque quis consectetur maxime nobis maiores repudiandae?
+                    Neque accusantium hic quam illo sequi adipisci sit provident labore minus quisquam maxime, fugiat doloribus blanditiis harum odio mollitia obcaecati deleniti animi corrupti vitae! Esse veritatis fugit magnam laboriosam corrupti.</p>
+                    <img src="../img/departamentos.jpg" alt="Múltiples avatares de rostros diversos">
+                </div>
+            </article>
+
+            <article id="mision">
+                <h2>Misión y valores</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non commodi beatae maxime, consectetur amet corrupti earum. Magni veritatis obcaecati non maxime, illo laudantium error? Nulla modi accusamus hic sit dignissimos.
+                Cum earum eum dolorum eveniet alias sed odit? Esse tempore exercitationem autem maxime sapiente rem voluptates corrupti pariatur obcaecati ullam eaque nobis nulla, quas nisi voluptatum consequatur sit aspernatur? Ipsum.
+                Nisi facilis inventore illo facere delectus atque ex rem possimus, libero, eligendi eius. Laudantium hic quidem doloremque nulla corrupti enim obcaecati sed dolor modi maxime sequi cupiditate officiis, dolore porro.</p>
+                <img src="../img/mision.png" alt="Piezas de rompecabezas">
+            </article>
+
+            <article id="testimonios">
+                <h2>Testimonios</h2>
+                <p>"..Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quo delectus, cupiditate incidunt nisi cum assumenda vero, ad quae laudantium voluptas?..."</p>
+                <img src="../img/testimonios_5star.png" alt="Ranking de estrellas: 5/5">
+                <p>"..Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veniam libero laborum, adipisci odio perferendis debitis perspiciatis? Dolore et soluta non deserunt dolorum beatae modi! Eaque, sequi. Sed, libero ea.."
+                </p>
+                <img src="../img/testimonios_5star.png" alt="Ranking de estrellas: 5/5">
+            </article>
+        </section>
+
     </main>
 
     <footer>
         <div>
-            <ul>
-                <li>
-                    <a href="nosotros.html">Sobre nosotros</a>
-                </li>
-                
-                <li>
-                    <a href="cursos.html">Cursos</a>
-                </li>
-                
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-                
-                <li>
-                    <a href="faq.html">FAQ</a>
-                </li>
-            </ul>
+            <nav class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="nosotros.html"><img src="../img/nosotros.svg"
+                                alt="Ícono de un grupo de personas, representando la sección 'nosotros'">Sobre nosotros</a>
+                    </li>
+    
+                    <li>
+                        <a href="cursos.html"><img src="../img/cursos.svg"
+                                alt="Ícono de un libro abierto, representando la sección 'cursos'">Cursos</a>
+                    </li>
+    
+                    <li>
+                        <a href="servicios.html"><img src="../img/servicios.svg"
+                                alt="Ícono de unas herramientas, representando la sección 'servicios'">Servicios</a>
+                    </li>
+    
+                    <li>
+                        <a href="contacto.html"><img src="../img/contacto.svg"
+                                alt="Ícono de un sobre abierto, representando la sección 'contacto'">Contacto</a>
+                    </li>
+    
+                    <li>
+                        <a href="consultas.html"><img src="../img/consultas.svg"
+                                alt="Ícono de un signo de pregunta, representando la sección 'consultas'">Consultas</a>
+                    </li>
+    
+                    <li>
+                        <a href="#">Volver arriba</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     
+        <div class="redes">
+            <div>
+                <a href="https://linkedin.com"><img src="../img/linkedin.svg" alt="Logo de Linkedin"></a>
+            </div>
+    
+            <div>
+                <a href="https://instagram.com"><img src="../img/instagram.svg" alt="Logo de Instagram"></a>
+            </div>
+    
+            <div>
+                <a href="https://x.com"><img src="../img/twitter-alt.svg" alt="Logo de X"></a>
+            </div>
+    
+            <div>
+                <a href="https://youtube.com"><img src="../img/youtube.svg" alt="Logo de YouTube"></a>
+            </div>
+        </div>
         <span>© 2025 Rodrigo Gómez. Todos los derechos reservados</span>
     </footer>
 </body>
