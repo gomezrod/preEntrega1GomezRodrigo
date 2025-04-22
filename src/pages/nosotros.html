@@ -8,86 +8,90 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body class="contenedor-body">
 
-    <header>
-        <div class="banner">
-    
-            <div class="logo">
+    <header class="contenedor-header">
+        <div class="contenedor-banner">
+
+            <div class="banner-izquierda">
+
                 <a href="../index.html">
-                    <img src="../img/logo.webp" alt="Imagen del logo de la empresa: figura de un soldador soldando">
-                    <h1>Forja Oeste</h1>
-                    <h3>Herrería y trabajos de soldadura</h3>
+                    <img class="logo" src="../img/logo.webp"
+                        alt="Imagen del logo de la empresa: figura de un soldador soldando">
                 </a>
+                <div class="titulo">
+                    <h1>Forja Oeste</h1>
+                    <h2>Herrería y trabajos de soldadura</h3>
+                </div>
+
             </div>
-    
-            <label for="buscador"></label>
-            <input type="text" , id="buscador" , placeholder="Buscar">
-            <button class="boton-busqueda">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                </svg>
-            </button>
-    
-            <div class="login">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                </svg>
+
+            <div class="banner-derecha">
+
+                <div class="buscador">
+                    <label for="buscador"></label>
+                    <input type="text" , id="buscador" , placeholder="Buscar">
+                    <button class="boton-busqueda">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="login">
+                    <a href="#">Login<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                        </svg></a>
+
+                </div>
+
             </div>
         </div>
-    
-        <div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="nosotros.html">Sobre nosotros</a>
-                    </li>
-    
-                    <li>
-                        <a href="cursos.html">Cursos</a>
-                    </li>
-    
-                    <li>
-                        <a href="servicios.html">Servicios</a>
-                    </li>
-    
-                    <li>
-                        <a href="contacto.html">Contacto</a>
-                    </li>
-    
-                    <li>
-                        <a href="consultas.html">Consultas</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+
+        <nav>
+            <ul class="contenedor-nav">
+                <li>
+                    <a href="nosotros.html">Sobre nosotros</a>
+                </li>
+
+                <li>
+                    <a href="cursos.html">Cursos</a>
+                </li>
+
+                <li>
+                    <a href="servicios.html">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+
+                <li>
+                    <a href="consultas.html">Consultas</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-        <section>
-            <article>
-                <ul class="lista-nosotros">
-                    <li><a href="nosotros.html#video-institucional">Nuestra Empresa</a></li>
-                        <ul>
-                            <li><a href="nosotros.html#historia">Historia</a></li>
-                                <ul>
-                                    <li><a href="nosotros.html#fundacion">Fundación</a></li>
-                                    <li><a href="nosotros.html#hitos">Hitos</a></li>
-                                </ul>
-                            <li><a href="nosotros.html#equipo">Nuestro Equipo</a></li>
-                                <ul>
-                                    <li><a href="nosotros.html#liderazgo">Liderazgo</a></li>
-                                    <li><a href="nosotros.html#departamentos">Departamentos</a></li>
-                                </ul>
-                            <li><a href="nosotros.html#mision">Misión y Valores</a></li>
-                            <li><a href="nosotros.html#testimonios">Testimonios</a></li>
-                        </ul>
-                </ul>
-            </article>
+    <main class="nosotros-contenedor-main">
+        <section class="nosotros-contenedor-portada">
+            <div class="nosotros-contenedor-portada-lista">
+                <a class="a-empresa" href="nosotros.html#video-institucional">Nuestra Empresa</a>
+                <div class="conector1"></div>
+                <a class="a-historia" href="nosotros.html#historia">Historia</a>
+                <div class="conector2"></div>
+                <a class="a-fundacion" href="nosotros.html#fundacion">Fundación</a>
+                <a class="a-hitos" href="nosotros.html#hitos">Hitos</a>
+                <a class="a-equipo" href="nosotros.html#equipo">Nuestro Equipo</a>
+                <a class="a-liderazgo" href="nosotros.html#liderazgo">Liderazgo</a>
+                <a class="a-departamentos" href="nosotros.html#departamentos">Departamentos</a>
+                <a class="a-mision" href="nosotros.html#mision">Misión y Valores</a>
+                <a class="a-testimonios" href="nosotros.html#testimonios">Testimonios</a>
+            </div>
 
             <article id="video-institucional">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y6GS8yc23t0?si=POsVhtA6YqQZl25A"
@@ -97,7 +101,7 @@
             </article>
         </section>
 
-        <section>
+        <section class="nosotros-contenedor-contenido">
             <article>
                 <h2 id="historia">Historia</h2>
 
@@ -161,60 +165,48 @@
 
     </main>
 
-    <footer>
-        <div>
-            <nav class="footer-nav">
-                <ul>
-                    <li>
-                        <a href="nosotros.html"><img src="../img/nosotros.svg"
-                                alt="Ícono de un grupo de personas, representando la sección 'nosotros'">Sobre nosotros</a>
-                    </li>
-    
-                    <li>
-                        <a href="cursos.html"><img src="../img/cursos.svg"
-                                alt="Ícono de un libro abierto, representando la sección 'cursos'">Cursos</a>
-                    </li>
-    
-                    <li>
-                        <a href="servicios.html"><img src="../img/servicios.svg"
-                                alt="Ícono de unas herramientas, representando la sección 'servicios'">Servicios</a>
-                    </li>
-    
-                    <li>
-                        <a href="contacto.html"><img src="../img/contacto.svg"
-                                alt="Ícono de un sobre abierto, representando la sección 'contacto'">Contacto</a>
-                    </li>
-    
-                    <li>
-                        <a href="consultas.html"><img src="../img/consultas.svg"
-                                alt="Ícono de un signo de pregunta, representando la sección 'consultas'">Consultas</a>
-                    </li>
-    
-                    <li>
-                        <a href="#">Volver arriba</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    
+    <footer class="footer">
+        <nav class="footer-nav">
+            <ul>
+                <li>
+                    <a href="nosotros.html"><img src="../img/nosotros.svg"
+                            alt="Ícono de un grupo de personas, representando la sección 'nosotros'">Sobre nosotros</a>
+                </li>
+
+                <li>
+                    <a href="cursos.html"><img src="../img/cursos.svg"
+                            alt="Ícono de un libro abierto, representando la sección 'cursos'">Cursos</a>
+                </li>
+
+                <li>
+                    <a href="servicios.html"><img src="../img/servicios.svg"
+                            alt="Ícono de unas herramientas, representando la sección 'servicios'">Servicios</a>
+                </li>
+
+                <li>
+                    <a href="contacto.html"><img src="../img/contacto.svg"
+                            alt="Ícono de un sobre abierto, representando la sección 'contacto'">Contacto</a>
+                </li>
+
+                <li>
+                    <a href="consultas.html"><img src="../img/consultas.svg"
+                            alt="Ícono de un signo de pregunta, representando la sección 'consultas'">Consultas</a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="#" class="link-arriba">Volver arriba</a>
+
         <div class="redes">
-            <div>
-                <a href="https://linkedin.com"><img src="../img/linkedin.svg" alt="Logo de Linkedin"></a>
-            </div>
-    
-            <div>
-                <a href="https://instagram.com"><img src="../img/instagram.svg" alt="Logo de Instagram"></a>
-            </div>
-    
-            <div>
-                <a href="https://x.com"><img src="../img/twitter-alt.svg" alt="Logo de X"></a>
-            </div>
-    
-            <div>
-                <a href="https://youtube.com"><img src="../img/youtube.svg" alt="Logo de YouTube"></a>
-            </div>
+            <a href="https://linkedin.com"><img src="../img/linkedin.svg" alt="Logo de Linkedin"></a>
+            <a href="https://instagram.com"><img src="../img/instagram.svg" alt="Logo de Instagram"></a>
+            <a href="https://x.com"><img src="../img/twitter-alt.svg" alt="Logo de X"></a>
+            <a href="https://youtube.com"><img src="../img/youtube.svg" alt="Logo de YouTube"></a>
         </div>
-        <span>© 2025 Rodrigo Gómez. Todos los derechos reservados</span>
+
+        <a class="logo-wpp" href="https://web.whatsapp.com"><img src="../img/wpp.png" alt="Logo-Whatsapp"></a>
+
+        <span> &copy; 2025 Rodrigo Gómez. Todos los derechos reservados</span>
     </footer>
 </body>
 
