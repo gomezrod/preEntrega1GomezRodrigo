@@ -1,5 +1,6 @@
 <h1 align="center">Hola 👋, soy Rodrigo Gómez</h1>
 <h3 align="center">Un estudiante de desarrollo fullstack Argentino</h3>
+- LINK A [WIREFRIME](https://whimsical.com/preentrega1gomezrodrigo-X6jHpPeeL4Wfc1UUjE5NPT)
 
 - 🔭 Actualmente me encuentro trabajando en [2da pre-entrega curso front-end flex de Coderhouse](https://github.com/gomezrod/preEntrega1GomezRodrigo)
 
