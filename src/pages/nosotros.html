@@ -5,94 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forja Oeste</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="contenedor-body">
 
-    <header class="contenedor-header">
-        <div class="contenedor-banner">
-
-            <div class="banner-izquierda">
-
-                <a href="../index.html">
-                    <img class="logo" src="../img/logo.webp"
-                        alt="Imagen del logo de la empresa: figura de un soldador soldando">
-                </a>
-                <div class="titulo">
-                    <h1>Forja Oeste</h1>
-                    <h2>Herrería y trabajos de soldadura</h3>
-                </div>
-
-            </div>
-
-            <div class="banner-derecha">
-
-                <div class="buscador">
-                    <label for="buscador"></label>
-                    <input type="text" , id="buscador" , placeholder="Buscar">
-                    <button class="boton-busqueda">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                        </svg>
+        <header class="contenedor-header">
+        
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand active" aria-current="page" href="../index.html">
+                        <img src="../img/logo.webp" alt="Logo" width="100" class="d-inline-block align-text-center">
+                        Forja<span class="brand-bold">Oeste</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="contenedor-nav navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" id="active" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cursos.html">Cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cursos.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./consultas.html">Consultas</a>
+                            </li>
+                        </ul>
+                        <div class="nav-derecha containter">
+                            <div class="login">
+                                <a href="#">Login<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg></a>
+                            </div>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="boton-busqueda btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+        
                 </div>
-
-                <div class="login">
-                    <a href="#">Login<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                        </svg></a>
-
-                </div>
-
-            </div>
-        </div>
-
-        <nav>
-            <ul class="contenedor-nav">
-                <li>
-                    <a href="nosotros.html">Sobre nosotros</a>
-                </li>
-
-                <li>
-                    <a href="cursos.html">Cursos</a>
-                </li>
-
-                <li>
-                    <a href="servicios.html">Servicios</a>
-                </li>
-
-                <li>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-
-                <li>
-                    <a href="consultas.html">Consultas</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            </nav>
+        
+        </header>
 
     <main class="nosotros-contenedor-main">
         <section class="nosotros-contenedor-portada">
-            <div class="nosotros-contenedor-portada-lista">
-                <a class="a-empresa" href="nosotros.html#video-institucional">Nuestra Empresa</a>
-                <div class="conector1"></div>
-                <a class="a-historia" href="nosotros.html#historia">Historia</a>
-                <div class="conector2"></div>
-                <a class="a-fundacion" href="nosotros.html#fundacion">Fundación</a>
-                <a class="a-hitos" href="nosotros.html#hitos">Hitos</a>
-                <a class="a-equipo" href="nosotros.html#equipo">Nuestro Equipo</a>
-                <a class="a-liderazgo" href="nosotros.html#liderazgo">Liderazgo</a>
-                <a class="a-departamentos" href="nosotros.html#departamentos">Departamentos</a>
-                <a class="a-mision" href="nosotros.html#mision">Misión y Valores</a>
-                <a class="a-testimonios" href="nosotros.html#testimonios">Testimonios</a>
-            </div>
-
             <article id="video-institucional">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Y6GS8yc23t0?si=POsVhtA6YqQZl25A"
                 title="YouTube video player" frameborder="0"
@@ -100,6 +72,213 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </article>
         </section>
+
+        <div class="accordion" id="accordionExample">
+        
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Nuestra Empresa
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+        
+                        <div class="accordion" id="sub-accordionExample">
+        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="sub-headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#sub-collapseOne" aria-expanded="false" aria-controls="sub-collapseOne">
+                                        Historia
+                                    </button>
+                                </h2>
+                                <div id="sub-collapseOne" class="accordion-collapse collapse"
+                                    aria-labelledby="sub-headingOne" data-bs-parent="#sub-accordionExample">
+                                    <div class="accordion-body">
+        
+                                        <div class="accordion" id="sub-sub-accordionExample">
+        
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="sub-sub-headingOne">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                        data-bs-target="#sub-sub-collapseOne" aria-expanded="false"
+                                                        aria-controls="sub-sub-collapseOne">
+                                                        Fundación
+                                                    </button>
+                                                </h2>
+                                                <div id="sub-sub-collapseOne" class="accordion-collapse collapse"
+                                                    aria-labelledby="sub-sub-headingOne"
+                                                    data-bs-parent="#sub-sub-accordionExample">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the first item's accordion body.</strong> It is hidden
+                                                        by default, until
+                                                        the collapse plugin adds the appropriate classes that we use to style
+                                                        each element.
+                                                        These classes control the overall appearance, as well as the showing and
+                                                        hiding via CSS
+                                                        transitions. You can modify any of this with custom CSS or overriding
+                                                        our default
+                                                        variables. It's also worth noting that just about any HTML can go within
+                                                        the
+                                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="sub-sub-headingTwo">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#sub-sub-collapseTwo"
+                                                        aria-expanded="false" aria-controls="sub-sub-collapseTwo">
+                                                        Hitos
+                                                    </button>
+                                                </h2>
+                                                <div id="sub-sub-collapseTwo" class="accordion-collapse collapse"
+                                                    aria-labelledby="sub-sub-headingTwo"
+                                                    data-bs-parent="#sub-sub-accordionExample">
+                                                    <div class="accordion-body">
+                                                        <strong>This is the second item's accordion body.</strong> It is hidden
+                                                        by default,
+                                                        until the collapse plugin adds the appropriate classes that we use to
+                                                        style each
+                                                        element. These classes control the overall appearance, as well as the
+                                                        showing and hiding
+                                                        via CSS transitions. You can modify any of this with custom CSS or
+                                                        overriding our
+                                                        default variables. It's also worth noting that just about any HTML can
+                                                        go within the
+                                                        <code>.accordion-body</code>, though the transition does limit overflow.
+                                                    </div>
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="sub-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sub-collapseTwo" aria-expanded="false" aria-controls="sub-collapseTwo">
+                                    Nuestro Equipo
+                                </button>
+                            </h2>
+                            <div id="sub-collapseTwo" class="accordion-collapse collapse" aria-labelledby="sub-headingTwo"
+                                data-bs-parent="#sub-accordionExample">
+                                <div class="accordion-body">
+        
+                                    <div class="accordion" id="sub-sub-accordionExample">
+        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="sub-sub-headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#sub-sub-collapseThree" aria-expanded="false"
+                                                    aria-controls="sub-sub-collapseThree">
+                                                    Liderazgo
+                                                </button>
+                                            </h2>
+                                            <div id="sub-sub-collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="sub-sub-headingThree"
+                                                data-bs-parent="#sub-sub-accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the first item's accordion body.</strong> It is hidden by
+                                                    default, until
+                                                    the collapse plugin adds the appropriate classes that we use to style each
+                                                    element.
+                                                    These classes control the overall appearance, as well as the showing and
+                                                    hiding via CSS
+                                                    transitions. You can modify any of this with custom CSS or overriding our
+                                                    default
+                                                    variables. It's also worth noting that just about any HTML can go within the
+                                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="sub-sub-headingFour">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#sub-sub-collapseFour"
+                                                    aria-expanded="false" aria-controls="sub-sub-collapseFour">
+                                                    Departamentos
+                                                </button>
+                                            </h2>
+                                            <div id="sub-sub-collapseFour" class="accordion-collapse collapse"
+                                                aria-labelledby="sub-sub-headingFour"
+                                                data-bs-parent="#sub-sub-accordionExample">
+                                                <div class="accordion-body">
+                                                    <strong>This is the second item's accordion body.</strong> It is hidden by
+                                                    default,
+                                                    until the collapse plugin adds the appropriate classes that we use to style
+                                                    each
+                                                    element. These classes control the overall appearance, as well as the
+                                                    showing and hiding
+                                                    via CSS transitions. You can modify any of this with custom CSS or
+                                                    overriding our
+                                                    default variables. It's also worth noting that just about any HTML can go
+                                                    within the
+                                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="sub-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sub-collapseThree" aria-expanded="false" aria-controls="sub-collapseThree">
+                                    Misión y Valores
+                                </button>
+                            </h2>
+                            <div id="sub-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="sub-headingThree" data-bs-parent="#sub-accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until
+                                    the collapse plugin adds the appropriate classes that we use to style each element.
+                                    These classes control the overall appearance, as well as the showing and hiding via CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables. It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="sub-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sub-collapseFour" aria-expanded="false" aria-controls="sub-collapseFour">
+                                    Testimonios
+                                </button>
+                            </h2>
+                            <div id="sub-collapseFour" class="accordion-collapse collapse"
+                                aria-labelledby="sub-headingFour" data-bs-parent="#sub-accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is hidden by default, until
+                                    the collapse plugin adds the appropriate classes that we use to style each element.
+                                    These classes control the overall appearance, as well as the showing and hiding via CSS
+                                    transitions. You can modify any of this with custom CSS or overriding our default
+                                    variables. It's also worth noting that just about any HTML can go within the
+                                    <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+        
+            </div>
+        </div>
 
         <section class="nosotros-contenedor-contenido">
             <article>
@@ -169,45 +348,49 @@
         <nav class="footer-nav">
             <ul>
                 <li>
-                    <a href="nosotros.html"><img src="../img/nosotros.svg"
+                    <a href="./nosotros.html"><img src="../img/nosotros.svg"
                             alt="Ícono de un grupo de personas, representando la sección 'nosotros'">Sobre nosotros</a>
                 </li>
-
+    
                 <li>
-                    <a href="cursos.html"><img src="../img/cursos.svg"
+                    <a href="./cursos.html"><img src="../img/cursos.svg"
                             alt="Ícono de un libro abierto, representando la sección 'cursos'">Cursos</a>
                 </li>
-
+    
                 <li>
-                    <a href="servicios.html"><img src="../img/servicios.svg"
+                    <a href="./servicios.html"><img src="../img/servicios.svg"
                             alt="Ícono de unas herramientas, representando la sección 'servicios'">Servicios</a>
                 </li>
-
+    
                 <li>
-                    <a href="contacto.html"><img src="../img/contacto.svg"
+                    <a href="./contacto.html"><img src="../img/contacto.svg"
                             alt="Ícono de un sobre abierto, representando la sección 'contacto'">Contacto</a>
                 </li>
-
+    
                 <li>
-                    <a href="consultas.html"><img src="../img/consultas.svg"
+                    <a href="./consultas.html"><img src="../img/consultas.svg"
                             alt="Ícono de un signo de pregunta, representando la sección 'consultas'">Consultas</a>
                 </li>
             </ul>
         </nav>
-
+    
         <a href="#" class="link-arriba">Volver arriba</a>
-
+    
         <div class="redes">
             <a href="https://linkedin.com"><img src="../img/linkedin.svg" alt="Logo de Linkedin"></a>
             <a href="https://instagram.com"><img src="../img/instagram.svg" alt="Logo de Instagram"></a>
             <a href="https://x.com"><img src="../img/twitter-alt.svg" alt="Logo de X"></a>
             <a href="https://youtube.com"><img src="../img/youtube.svg" alt="Logo de YouTube"></a>
         </div>
-
+    
         <a class="logo-wpp" href="https://web.whatsapp.com"><img src="../img/wpp.png" alt="Logo-Whatsapp"></a>
-
+    
         <span> &copy; 2025 Rodrigo Gómez. Todos los derechos reservados</span>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

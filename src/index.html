@@ -15,68 +15,52 @@
 <body>
 
     <header class="contenedor-header">
-        <div class="contenedor-banner">
-
-            <div class="banner-izquierda">
-
-                <a href="index.html">
-                    <img class="logo" src="img/logo.webp" alt="Imagen del logo de la empresa: figura de un soldador soldando">
+    
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand active" aria-current="page" href="./index.html">
+                    <img src="./img/logo.webp" alt="Logo" width="100"
+                        class="d-inline-block align-text-center">
+                    Forja<span class="brand-bold">Oeste</span>
                 </a>
-                <div class="titulo">
-                    <h1>Forja Oeste</h1>
-                    <h2>Herrería y trabajos de soldadura</h3>
-                </div>
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="contenedor-nav navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/cursos.html">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/cursos.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/consultas.html">Consultas</a>
+                        </li>
+                    </ul>
+                        <div class="nav-derecha containter">
+                            <div class="login">
+                                <a href="#">Login<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                        stroke="currentColor" class="size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    </svg></a>
+                            </div>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                <button class="boton-busqueda btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                    </div>
+                
             </div>
-        
-            <div class="banner-derecha">
-        
-                <div class="buscador">
-                    <label for="buscador"></label>
-                    <input type="text" , id="buscador" , placeholder="Buscar">
-                    <button class="boton-busqueda">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                        </svg>
-                    </button>
-                </div>
-        
-                <div class="login">
-                    <a href="#">Login<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                        class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                    </svg></a>
-
-                </div>
-
-            </div>
-        </div>
-        
-        <nav>
-            <ul class="contenedor-nav">
-                <li>
-                    <a href="pages/nosotros.html">Sobre nosotros</a>
-                </li>
-        
-                <li>
-                    <a href="pages/cursos.html">Cursos</a>
-                </li>
-        
-                <li>
-                    <a href="pages/servicios.html">Servicios</a>
-                </li>
-        
-                <li>
-                    <a href="pages/contacto.html">Contacto</a>
-                </li>
-        
-                <li>
-                    <a href="pages/consultas.html">Consultas</a>
-                </li>
-            </ul>
         </nav>
 
     </header>
