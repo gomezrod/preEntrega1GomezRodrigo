@@ -21,7 +21,13 @@
     --main-text-light: #9B72CF;
     --main-font: "Roboto",sans-serif;
 }
- 
+
+/* GLOBALES */
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     background-color: var(--main-color-alternative);
@@ -55,6 +61,7 @@ ul {
 
 .contenedor-header{
     position: fixed;
+    z-index: 3;
     display: flex;
     flex-flow: column wrap;
     background-color: var(--main-color-alternative);
@@ -277,7 +284,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 10px 20px 15px 20px;  
+    padding: 10px 20px 15px 20px;
     a {
             display: flex;
             align-items: center;
@@ -353,6 +360,19 @@ nav {
     transition: 0.6s;
 }
 
+.boton-arriba img{
+    height: 70px;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    transition: 0.8s;
+}
+
+.boton-arriba img:hover {
+    height: 80px;
+    transition: 0.6s;
+}
+
 /** COMPONENTS **/
 .boton {
     border-radius: 50% ;
@@ -384,24 +404,42 @@ nav {
 }
 
 .nosotros-contenedor-portada{
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.nosotros-contenedor-portada-lista{
+.contenedor-video {
+    display: flex;
+    align-items: center;
+}
+
+.video-institucional {
+    box-shadow: 0px 10px 10px 10px var(--negro);
+    min-width: 70vw;
+    min-height: 40vh;
+}
+
+@media (max-width: 768px){
+
+    .video-institucional {
+            min-width: 70vw;
+            min-height: 40vh;
+        }
+}
+
+/* .nosotros-contenedor-portada-lista{
     padding: 20px;
     border: solid;
     height: 70vh;
     width: 90%;
     background-color: var(--main-color-secondary);
-    /*background-image: url(../img/mapa.png);
+    background-image: url(../img/mapa.png);
     background-size: cover;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
     "empresa conector1 historia    conector2 fundacion"
     "empresa conector1 historia    conector2 hitos"
     "empresa conector1 equipo      conector3 liderazgo"
@@ -456,10 +494,59 @@ nav {
 .a-testimonios {
     grid-area: testimonios;
 
-}
+} */
 
 .nosotros-contenedor-contenido{
+    padding: 10px;
+}
+
+.nosotros-articulo-contenido {
+    padding-top: 150px;
     display: flex;
+    flex-direction: column;
+}
+
+.nosotros-articulo-contenido img {
+    align-self: center;
+    width: 65%;
+    height: auto;
+}
+
+.contenedor-testimonio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios-title {
+    padding-bottom: 30px;
+}
+
+.tarjeta-testimonio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    border-radius: 10px;
+    border: solid black 2px;
+    background-color: var(--negro);
+    padding: 10px 15px 10px 15px ;
+}
+
+.autor-testimonio {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.contenedor-testimonio .autor-testimonio {
+    font-weight: 100;
+}
+
+.contenedor-testimonio img {
+    position: relative;
+    top: -20px;
+    width: 25vw;
 }
 
 /* Servicios */
@@ -494,6 +581,7 @@ nav {
 }
 
 .accordion-button:not(.collapsed) {
+    z-index: 1;
     color: var(--blanco);
     font-weight: 600;
     background-color: var(--main-text-light);
@@ -502,6 +590,7 @@ nav {
 
 .accordion-button {
     position: relative;
+    z-index: 1;
     display: flex;
     align-items: center;
     width: 100%;
@@ -511,8 +600,10 @@ nav {
     color: var(--negro);
     text-align: left;
     background-color: var(--main-text-color);
-    border: 0;
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: var(--bs-accordion-transition);
 }
+
+.accordion-button:focus{
+    z-index: 2;
+    box-shadow: var(--negro);
+}
+
