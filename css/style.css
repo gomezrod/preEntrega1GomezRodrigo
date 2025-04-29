@@ -34,6 +34,9 @@ body {
     color: var(--main-text-color);
     font-family: var(--main-font);
     font-size: 62.5%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
 }
 
 h3 {
@@ -298,6 +301,12 @@ nav {
         transition: 0.6s;
     }
 
+}
+
+@media (max-width: 992px){
+    .footer-nav ul {
+        flex-direction: column;
+    }
 }
 
 .footer a {
@@ -742,6 +751,12 @@ nav {
 
 .contacto-ubicacion{
     box-shadow: 0px 10px 10px 10px var(--negro);
+}
+
+@media (max-width: 768px){
+    .contacto-ubicacion iframe {
+            width: 80vw;
+        }
 }
 
 .contacto-contenedor-formulario{
