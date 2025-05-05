@@ -4,7 +4,7 @@
     width: 100%;
     background-color: variables.$main-color;
     margin-bottom: 1rem;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
 }
 
 .footer-nav ul {
@@ -12,26 +12,16 @@
     justify-content: space-between;
     width: 100%;
     padding: 10px 20px 15px 20px;
-
-    a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: variables.$main-text-color;
-        transition: 0.6s;
-    }
-
-    a:hover {
-        border-bottom: variables.$grisclaro solid 1px;
-        color: variables.$grisclaro;
-        transition: 0.6s;
-    }
-
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .footer-nav ul {
         flex-direction: column;
+        align-items: center;
+
+        li {
+            padding: 0.5rem;
+        }
     }
 }
 
@@ -40,6 +30,7 @@
 }
 
 .footer {
+    width: 100vw;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -50,14 +41,6 @@
     padding: 10px 0;
     width: 30%;
     justify-content: space-between;
-}
-
-.link-arriba {
-    margin-bottom: 1rem;
-}
-
-.link-arriba:hover {
-    border-bottom: variables.$main-text-color solid 1px;
 }
 
 .footer-nav img {
@@ -79,7 +62,7 @@
 .redes img:hover {
     transition: 0.6s;
     height: auto;
-    width: 39px;
+    transform: scale(1.2) ;
 }
 
 .logo-wpp img {

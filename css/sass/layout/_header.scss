@@ -10,7 +10,7 @@ ul {
     display: flex;
     flex-flow: column wrap;
     background-color: variables.$main-color-alternative;
-    width: 100%;
+    width: 100vw;
 }
 
 .contenedor-banner {
@@ -137,18 +137,6 @@ nav {
     display: flex;
     justify-content: center;
     margin: 0 1rem;
-
-    a {
-        padding: 10px 20px;
-        border-bottom: 0;
-        transition: 1s;
-    }
-
-    a:hover {
-        border-bottom: solid 1px;
-        color: variables.$main-text-light;
-        transition: 0.4s;
-    }
 }
 
 .contenedor-nav a {
@@ -156,11 +144,22 @@ nav {
     color: variables.$main-color;
     font-weight: 700;
     font-size: 1rem;
+
+    &:hover{
+        color: variables.$negro;
+    }
+
+    &:hover::after{
+        background: variables.$main-color;
+    }
 }
 
 @media (max-width: 992px) {
     .contenedor-nav {
         flex-flow: column nowrap;
+        li {
+            padding: 0.5rem;
+        }
     }
 
     .nav-derecha {

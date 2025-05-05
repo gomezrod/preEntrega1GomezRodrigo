@@ -1,0 +1,43 @@
+@use '../abstracts/variables';
+
+.enlace__navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: variables.$main-text-color;
+    transition: 0.6s;
+}
+
+.enlace__navbar::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background-color: variables.$blanco;
+    position: absolute;
+    transform: scale(0);
+    left: 0;
+    bottom: -8px;
+    transition: all 0.4s 0.2s;
+    pointer-events: none;
+}
+
+.enlace__navbar:hover {
+    color: variables.$grisclaro;
+}
+
+.enlace__navbar:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#active {
+    color: variables.$negro;
+    transform: scale(1.1);
+}
+
+#active::after {
+    opacity: 1;
+    transform: scale(1);
+    background: variables.$main-color;
+}
+
