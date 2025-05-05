@@ -1,0 +1,25 @@
+
+/* ABSTRACTS */
+@use './abstracts/variables';
+
+/* BASE */
+@use './base/globales';
+@use './base/reset';
+
+/* LAYOUT */
+@use './layout/footer';
+@use './layout/header';
+
+/* COMPONENTES */
+@use './components/buttons';
+
+/* PAGES */
+@use './pages/consultas';
+@use './pages/contacto';
+@use './pages/cursos';
+@use './pages/index';
+@use './pages/nosotros';
+@use './pages/servicios';
+
+/* VENDORS */
+@use './vendors/bootstrap';

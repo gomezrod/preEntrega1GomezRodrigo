@@ -1,0 +1,54 @@
+@use '../abstracts/variables';
+
+.servicios-titulo {
+    align-self: center;
+    justify-self: center;
+}
+
+.servicios-contenedor-article {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.servicios-article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+/* .servicios-article-titulo {
+    justify-content: center;
+} */
+
+.servicios-article:nth-child(3) {
+    flex-direction: row-reverse;
+    color: variables.$main-color-alternative;
+    background-color: variables.$blanco;
+}
+
+.servicios-article-icono {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    text-align: justify;
+}
+
+.servicios-article-icono img {
+    width: 10vw;
+}
+
+.servicios-article-imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+}
+
+.servicios-article-imagen img {
+    max-width: 80%;
+}

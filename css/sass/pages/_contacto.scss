@@ -1,0 +1,153 @@
+@use '../abstracts/variables';
+
+.contacto-titulo {
+    margin-bottom: 1rem;
+}
+
+.contacto-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    width: 100%;
+}
+
+.contacto-ubicacion {
+    box-shadow: 0px 10px 10px 10px variables.$negro;
+}
+
+@media (max-width: 768px) {
+    .contacto-ubicacion iframe {
+        width: 80vw;
+    }
+}
+
+.contacto-contenedor-formulario {
+    width: 90%;
+    ;
+}
+
+
+.contacto-formulario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding-bottom: 2rem;
+}
+
+.input-nombre {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.input-nombre,
+.input-mail,
+.input-tel,
+.input-lista,
+.input-mensaje {
+    input {
+        border: variables.$main-text-light solid 3px;
+    }
+
+    select {
+        border: variables.$main-text-light solid 3px;
+    }
+
+    textarea {
+        border: variables.$main-text-light solid 3px;
+        height: 80%;
+    }
+
+    label {
+        font-size: medium;
+        font-weight: 400;
+    }
+}
+
+.input-mail {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.input-tel {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.input-lista {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.input-mensaje {
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.input-submit {
+    align-self: center;
+    justify-self: center;
+    grid-column: 1/4;
+    grid-row: 4/5;
+    width: 100%;
+}
+
+.contacto-boton-enviar {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: medium;
+    font-weight: 600;
+    color: variables.$grisclaro;
+    border: variables.$main-color;
+    background-color: variables.$main-text-light;
+    height: 3rem;
+    border-radius: 5px;
+    transition: 0.4s;
+    width: 80%;
+}
+
+.contacto-boton-enviar:hover {
+    color: variables.$negro;
+    background-color: variables.$main-text-color;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+@media (max-width: 992px) {
+
+    .contacto-formulario {
+        grid-template-columns: 1fr;
+    }
+
+    .input-nombre {
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+
+    .input-mail {
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+
+    .input-tel {
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+
+    .input-lista {
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+
+    .input-mensaje {
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+
+    .input-submit {
+        grid-column: 1/3;
+        grid-row: auto;
+    }
+}

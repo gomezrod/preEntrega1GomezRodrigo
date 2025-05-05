@@ -1,0 +1,56 @@
+@use '../abstracts/variables';
+
+#navbarSupportedContent {
+    justify-content: space-around;
+}
+
+.navbar {
+    background-color: variables.$grisclaro !important;
+}
+
+.navbar-nav {
+    justify-content: space-between;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+}
+
+#active {
+    color: variables.$negro;
+    font-size: 1.1rem;
+    font-weight: 900;
+}
+
+.navbar-brand.active {
+    font-size: 1.7rem;
+    color: variables.$negro;
+    font-weight: 900;
+}
+
+.accordion-button:not(.collapsed) {
+    z-index: 1;
+    color: variables.$blanco;
+    font-weight: 600;
+    background-color: variables.$main-text-light;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 variables.$main-color-alternative;
+}
+
+.accordion-button {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    font-weight: 400;
+    color: variables.$negro;
+    text-align: left;
+    background-color: variables.$main-text-color;
+}
+
+.accordion-button:focus {
+    z-index: 2;
+    box-shadow: variables.$negro;
+}

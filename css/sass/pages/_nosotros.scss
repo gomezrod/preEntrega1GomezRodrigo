@@ -1,0 +1,203 @@
+@use '../abstracts/variables';
+
+.contenedor-body {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.lista-nosotros a {
+    color: variables.$negro;
+}
+
+.nosotros-contenedor-main {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nosotros-contenedor-portada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-video {
+    display: flex;
+    align-items: center;
+}
+
+.video-institucional {
+    box-shadow: 0px 10px 10px 10px variables.$negro;
+    min-width: 70vw;
+    min-height: 50vh;
+    margin: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .video-institucional {
+        min-width: 70vw;
+        min-height: 40vh;
+    }
+}
+
+/* .nosotros-contenedor-portada-lista{
+    padding: 20px;
+    border: solid;
+    height: 70vh;
+    width: 90%;
+    background-color: $main-color-secondary;
+    background-image: url(../img/mapa.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-areas:
+    "empresa conector1 historia    conector2 fundacion"
+    "empresa conector1 historia    conector2 hitos"
+    "empresa conector1 equipo      conector3 liderazgo"
+    "empresa conector1 equipo      conector3 departamentos"
+    "empresa conector1 mision      .         ."
+    "empresa conector1 testimonios .         .";
+    grid-template-columns: 30% auto 15% auto 30%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.a-empresa{
+    grid-area: empresa;
+    align-self: center;
+}
+
+.a-historia {
+    grid-area: historia;
+
+}
+
+
+.a-fundacion {
+    grid-area: fundacion;
+
+}
+
+.a-hitos {
+    grid-area: hitos;
+
+}
+
+.a-equipo {
+    grid-area: equipo;
+
+}
+
+.a-liderazgo {
+    grid-area: liderazgo;
+
+}
+
+.a-departamentos {
+    grid-area: departamentos;
+
+}
+
+.a-mision {
+    grid-area: mision;
+
+}
+
+.a-testimonios {
+    grid-area: testimonios;
+
+} */
+
+.nosotros-contenedor-contenido {
+    padding: 10px;
+}
+
+.nosotros-articulo-contenido {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.nosotros-articulo-contenido-texto {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .h2 {
+        justify-self: center;
+    }
+}
+
+.nosotros-articulo-contenido:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.nosotros-articulo-contenido img {
+    max-width: 40%;
+    align-self: center;
+    margin: 10px 30px;
+}
+
+@media (max-width: 992px) {
+    .nosotros-articulo-contenido {
+        flex-direction: column;
+    }
+
+    .nosotros-articulo-contenido:nth-child(even) {
+        flex-direction: column;
+    }
+
+    .nosotros-articulo-contenido img {
+        max-width: 50%;
+        margin: 10px 30px;
+    }
+}
+
+#testimonios {
+    display: flex;
+    flex-direction: column;
+}
+
+#testimonios img {
+    height: auto;
+}
+
+.contenedor-testimonio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios-title {
+    padding-bottom: 30px;
+}
+
+.tarjeta-testimonio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    border-radius: 10px;
+    border: solid black 2px;
+    background-color: variables.$negro;
+    padding: 10px 15px 10px 15px;
+}
+
+.autor-testimonio {
+    font-weight: 400;
+    font-style: italic;
+}
+
+.contenedor-testimonio .autor-testimonio {
+    font-weight: 100;
+}
+
+.contenedor-testimonio img {
+    position: relative;
+    top: -20px;
+    width: 25vw;
+}

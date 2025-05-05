@@ -1,0 +1,184 @@
+@use '../abstracts/variables';
+
+ul {
+    list-style: none;
+}
+
+.contenedor-header {
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: variables.$main-color-alternative;
+    width: 100%;
+}
+
+.contenedor-banner {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: variables.$negro;
+    /* background-image: url('../img/banner.webp');
+    background-size: cover; */
+}
+
+.banner-izquierda {
+    display: flex;
+    height: 100%;
+    width: 60%;
+}
+
+.logo {
+    width: 150px;
+    min-width: 150px;
+}
+
+.titulo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.navbar-brand {
+    color: variables.$main-color;
+    font-size: 1.5rem;
+}
+
+.brand-bold {
+    font-weight: bolder;
+}
+
+.banner-derecha {
+    height: 100%;
+    display: flex;
+    flex-flow: column-reverse wrap;
+    justify-content: space-around;
+}
+
+.buscador {
+    height: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.buscador input {
+    padding: 10px;
+    height: 40px;
+    border: solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.boton-busqueda {
+    color: variables.$negro;
+    border: variables.$main-color;
+    background-color: variables.$main-text-light;
+    margin-right: 10px;
+}
+
+.boton-busqueda:hover {
+    background-color: variables.$main-color;
+    cursor: pointer;
+}
+
+.boton-busqueda svg {
+    width: 35px;
+    height: 35px;
+}
+
+.login {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.login a {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    color: variables.$grisclaro;
+    transition: 1s;
+    position: relative;
+    margin-right: 3rem;
+}
+
+.login a:hover {
+    transition: 1s;
+    position: relative;
+    margin-right: 0.3rem;
+    color: variables.$main-color;
+}
+
+.login svg {
+    margin-left: 10px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    color: variables.$main-color;
+}
+
+nav {
+    background-color: variables.$main-text-light;
+}
+
+.contenedor-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+.contenedor-nav li {
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+
+    a {
+        padding: 10px 20px;
+        border-bottom: 0;
+        transition: 1s;
+    }
+
+    a:hover {
+        border-bottom: solid 1px;
+        color: variables.$main-text-light;
+        transition: 0.4s;
+    }
+}
+
+.contenedor-nav a {
+    text-decoration: none;
+    color: variables.$main-color;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+@media (max-width: 992px) {
+    .contenedor-nav {
+        flex-flow: column nowrap;
+    }
+
+    .nav-derecha {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        position: relative;
+        margin-right: 3rem;
+        transition: 1s;
+    }
+
+    .login:hover {
+        position: relative;
+        margin-left: 4.5rem;
+        transition: 1s;
+    }
+}

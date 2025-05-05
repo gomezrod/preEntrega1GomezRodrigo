@@ -1,0 +1,85 @@
+@use '../abstracts/variables';
+
+.cursos-main {
+    background-color: variables.$negro;
+    padding: 20px;
+}
+
+.cursos-titulo {
+    padding-top: 150px;
+}
+
+.cursos-contenedor-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+.cursos-contenedor-article:nth-child(even) {
+    background-color: variables.$main-color-alternative;
+}
+
+.cursos-article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: variables.$main-color-alternative;
+}
+
+.cursos-article2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.cursos-article-grafico {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.cursos-article-grafico img {
+    max-width: 80%;
+    align-self: center;
+}
+
+.cursos-article-texto {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    max-width: 40vw;
+
+}
+
+.cursos-boton-inscribirse {
+    color: variables.$negro;
+    border: variables.$main-color;
+    background-color: variables.$main-text-light;
+    margin-right: 10px;
+}
+
+.cursos-boton-inscribirse:hover {
+    background-color: variables.$main-text-color;
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+    .cursos-article {
+        flex-direction: column;
+    }
+
+    .cursos-article2 {
+        flex-direction: column;
+    }
+
+    .cursos-article-texto {
+        max-width: 90%;
+    }
+
+}

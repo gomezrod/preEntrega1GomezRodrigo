@@ -1,0 +1,31 @@
+@use '../abstracts/variables';
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: variables.$main-color-alternative;
+    color: variables.$main-text-color;
+    font-family: variables.$main-font;
+    font-size: 62.5%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$main-color;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}

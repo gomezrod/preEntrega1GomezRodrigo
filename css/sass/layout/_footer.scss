@@ -1,0 +1,109 @@
+@use '../abstracts/variables';
+
+.footer-nav {
+    width: 100%;
+    background-color: variables.$main-color;
+    margin-bottom: 1rem;
+    padding: 1.5rem 0;
+}
+
+.footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px 15px 20px;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: variables.$main-text-color;
+        transition: 0.6s;
+    }
+
+    a:hover {
+        border-bottom: variables.$grisclaro solid 1px;
+        color: variables.$grisclaro;
+        transition: 0.6s;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .footer-nav ul {
+        flex-direction: column;
+    }
+}
+
+.footer a {
+    color: variables.$main-text-color;
+}
+
+.footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.redes {
+    display: flex;
+    padding: 10px 0;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.link-arriba {
+    margin-bottom: 1rem;
+}
+
+.link-arriba:hover {
+    border-bottom: variables.$main-text-color solid 1px;
+}
+
+.footer-nav img {
+    height: 35px;
+    width: 35px;
+    background-color: variables.$main-text-color;
+    border-radius: 100%;
+}
+
+.redes img {
+    background-color: variables.$main-text-color;
+    padding: 0.25rem;
+    border-radius: 30%;
+    width: 35px;
+    height: auto;
+    transition: 1.2s;
+}
+
+.redes img:hover {
+    transition: 0.6s;
+    height: auto;
+    width: 39px;
+}
+
+.logo-wpp img {
+    height: 70px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: 0.8s;
+}
+
+.logo-wpp img:hover {
+    height: 80px;
+    transition: 0.6s;
+}
+
+.boton-arriba img {
+    height: 70px;
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    transition: 0.8s;
+}
+
+.boton-arriba img:hover {
+    height: 80px;
+    transition: 0.6s;
+}
