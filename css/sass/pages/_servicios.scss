@@ -35,10 +35,15 @@
     align-items: center;
     max-width: 50%;
     text-align: justify;
-}
 
-.servicios-article-icono img {
-    width: 10vw;
+    img {
+            width: 10vw;
+            padding: 1rem;
+        }
+
+    p {
+        padding: 0 2rem;
+    }
 }
 
 .servicios-article-imagen {

@@ -71,11 +71,10 @@
     right: 30px;
     bottom: 30px;
     transition: 0.8s;
-}
 
-.logo-wpp img:hover {
-    height: 80px;
-    transition: 0.6s;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 .boton-arriba img {
@@ -84,9 +83,8 @@
     left: 30px;
     bottom: 30px;
     transition: 0.8s;
-}
 
-.boton-arriba img:hover {
-    height: 80px;
-    transition: 0.6s;
+    &:hover {
+        transform: scale(1.2);
+    }
 }

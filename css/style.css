@@ -109,10 +109,8 @@ p {
   bottom: 30px;
   transition: 0.8s;
 }
-
 .logo-wpp img:hover {
-  height: 80px;
-  transition: 0.6s;
+  transform: scale(1.2);
 }
 
 .boton-arriba img {
@@ -122,10 +120,8 @@ p {
   bottom: 30px;
   transition: 0.8s;
 }
-
 .boton-arriba img:hover {
-  height: 80px;
-  transition: 0.6s;
+  transform: scale(1.2);
 }
 
 ul {
@@ -365,6 +361,10 @@ nav {
   padding: 2rem;
   text-align: center;
 }
+.consultas-article h3 {
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
 
 .consultas-article a {
   color: #000;
@@ -541,8 +541,12 @@ nav {
   padding: 20px;
 }
 
-.cursos-titulo {
+.cursos__titulo--principal {
   padding-top: 150px;
+}
+
+.cursos__titulo {
+  padding: 2rem;
 }
 
 .cursos-contenedor-article {
@@ -642,13 +646,20 @@ nav {
 }
 .contenedor-section article p {
   text-align: center;
-  padding: 20px 0;
+  padding: 1rem 1rem 0 1rem;
+  margin-bottom: 0.5rem;
+}
+.contenedor-section article a {
+  color: #9B72CF;
+}
+.contenedor-section article a:hover {
+  color: #EAEAFF;
 }
 .contenedor-section article img {
   width: 100%;
   height: 40vh;
   object-fit: cover;
-  padding-bottom: 1rem;
+  padding: 1rem 1rem;
 }
 
 .contenedor-body {
@@ -774,8 +785,22 @@ nav {
   flex-direction: column;
   align-items: center;
 }
-.nosotros-articulo-contenido-texto .h2 {
+.nosotros-articulo-contenido-texto h2 {
   justify-self: center;
+  padding-bottom: 1rem;
+}
+.nosotros-articulo-contenido-texto h3 {
+  padding-bottom: 1rem;
+  align-self: center;
+}
+
+.nosotros--hitos,
+.nosotros--departamentos {
+  align-items: start;
+}
+.nosotros--hitos p,
+.nosotros--departamentos p {
+  padding: 0.5rem;
 }
 
 .nosotros-articulo-contenido:nth-child(even) {
@@ -824,6 +849,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 60%;
   border-radius: 10px;
   border: solid black 2px;
@@ -880,9 +906,12 @@ nav {
   max-width: 50%;
   text-align: justify;
 }
-
 .servicios-article-icono img {
   width: 10vw;
+  padding: 1rem;
+}
+.servicios-article-icono p {
+  padding: 0 2rem;
 }
 
 .servicios-article-imagen {
