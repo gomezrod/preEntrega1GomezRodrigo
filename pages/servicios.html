@@ -7,13 +7,14 @@
     <title>Forja Oeste</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header class="contenedor-header">
     
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-xl bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" aria-current="page" href="../index.html">
                     <img src="../img/logo.webp" alt="Logo" width="100" class="d-inline-block align-text-center">
@@ -63,45 +64,48 @@
     </header>
 
     <main>
+
+        <div data-aos-offset="200" data-aos="fade-up" data-aos-duration="1500" class="servicios__titulo--principal">
+            <div class="servicios__screen-black">
+                <h2>Nuestros servicios</h2>
+            </div>
+        </div>
+
         <section class="container servicios-contenedor-article">
-            <article class="servicios-article-titulo">
-                <div class="servicios-titulo">
-                    <h2>Nuestros servicios</h2>
-                </div>
-            </article>
-            <article class="servicios-article">
+            
+            <article data-aos-offset="200" data-aos="fade-right" data-aos-duration="2000" class="servicios-article">
                 
-                <div class="servicios-article-icono">
+                <div  class="servicios-article-icono">
                     <h3>Soldadura especializada</h3>
-                    <img src="../img/servicios.svg" alt="Ícono de unas herramientas">
+                    <img src="../img/servicios/service1_logo.svg" alt="Ícono de unas herramientas">
                     <p>Trabajos de soldadura específicos, contamos con más de 40 años de experiencia en el rubro. Metales ferrosos y no ferrosos. Soldadura bajo agua. Soldadura en uniones críticas. Escaneo y certificación de soldaduras.</p>
                 </div>
                 <div class="servicios-article-imagen">
-                    <img src="../img/img_1.webp" alt="Imagen sobre servicio 1: soldador soldando">
+                    <img src="../img/servicios/service1_foto.webp" alt="Imagen sobre servicio 1: soldador soldando">
                 </div>
             </article>
 
-            <article class="servicios-article">
+            <article data-aos-offset="200" data-aos="fade-left" data-aos-duration="2000" class="servicios-article">
             
                 <div class="servicios-article-icono">
                     <h3>Instrucción de personal</h3>
-                    <img src="../img/cursos.svg" alt="Ícono de un libro abierto">
+                    <img src="../img/servicios/service2_logo.svg" alt="Ícono de un libro abierto">
                     <p>Brindamos cursos y talleres para la instrucción y certificación de operarios metalúrgicos. Normas ISO, DIN, IRAM. Planificación en producción de unidades soldadas. Métodos de evaluación y verificación de calidad.</p>
                 </div>
                 <div class="servicios-article-imagen">
-                    <img src="../img/servicio_2.jpg" alt="Imagen sobre servicio 2: Grupo de personas recibiendo instrucción">
+                    <img src="../img/servicios/service2_foto.webp" alt="Imagen sobre servicio 2: Grupo de personas recibiendo instrucción">
                 </div>
             </article>
 
-            <article class="servicios-article">
+            <article data-aos-offset="200" data-aos="fade-right" data-aos-duration="2000" class="servicios-article">
             
                 <div class="servicios-article-icono">
                     <h3>Ingeniería y diseño</h3>
-                    <img src="../img/engranaje.svg" alt="Ícono de un engranaje">
+                    <img src="../img/servicios/service3_logo.svg" alt="Ícono de un engranaje">
                     <p>Cálculo y diseño de piezas y estructuras soldadas. Trabajos a mediana y gran escala. Diagramado de instalaciones de soldadura industrial. Certificaciones y homologaciones.</p>
                 </div>
                 <div class="servicios-article-imagen">
-                    <img src="../img/servicio_3.jpg" alt="Imagen sobre servicio 3: ingenieros revisando un plano">
+                    <img src="../img/servicios/servicie3_foto.webp" alt="Imagen sobre servicio 3: ingenieros revisando un plano">
                 </div>
             </article>
 
@@ -110,29 +114,29 @@
 
     <footer class="footer">
         <nav class="footer-nav">
-            <ul>
+            <ul class="navegacion__footer">
                 <li>
-                    <a class="enlace__navbar" href="./nosotros.html"><img src="../img/nosotros.svg"
+                    <a class="enlace__navbar" href="./nosotros.html"><img src="../img/footer/nosotros.svg"
                             alt="Ícono de un grupo de personas, representando la sección 'nosotros'">Sobre nosotros</a>
                 </li>
     
                 <li>
-                    <a class="enlace__navbar" href="./cursos.html"><img src="../img/cursos.svg"
+                    <a class="enlace__navbar" href="./cursos.html"><img src="../img/footer/cursos.svg"
                             alt="Ícono de un libro abierto, representando la sección 'cursos'">Cursos</a>
                 </li>
     
                 <li>
-                    <a class="enlace__navbar" href="./servicios.html"><img src="../img/servicios.svg"
+                    <a class="enlace__navbar" href="./servicios.html"><img src="../img/footer/servicios.svg"
                             alt="Ícono de unas herramientas, representando la sección 'servicios'">Servicios</a>
                 </li>
     
                 <li>
-                    <a class="enlace__navbar" href="./contacto.html"><img src="../img/contacto.svg"
+                    <a class="enlace__navbar" href="./contacto.html"><img src="../img/footer/contacto.svg"
                             alt="Ícono de un sobre abierto, representando la sección 'contacto'">Contacto</a>
                 </li>
     
                 <li>
-                    <a class="enlace__navbar" href="./consultas.html"><img src="../img/consultas.svg"
+                    <a class="enlace__navbar" href="./consultas.html"><img src="../img/footer/consultas.svg"
                             alt="Ícono de un signo de pregunta, representando la sección 'consultas'">Consultas</a>
                 </li>
             </ul>
@@ -141,14 +145,14 @@
         <a href="#" class="enlace__navbar">Volver arriba</a>
     
         <div class="redes">
-            <a href="https://linkedin.com"><img src="../img/linkedin.svg" alt="Logo de Linkedin"></a>
-            <a href="https://instagram.com"><img src="../img/instagram.svg" alt="Logo de Instagram"></a>
-            <a href="https://x.com"><img src="../img/twitter-alt.svg" alt="Logo de X"></a>
-            <a href="https://youtube.com"><img src="../img/youtube.svg" alt="Logo de YouTube"></a>
+            <a href="https://linkedin.com"><img src="../img/redes/linkedin.svg" alt="Logo de Linkedin"></a>
+            <a href="https://instagram.com"><img src="../img/redes/instagram.svg" alt="Logo de Instagram"></a>
+            <a href="https://x.com"><img src="../img/redes/twitter-alt.svg" alt="Logo de X"></a>
+            <a href="https://youtube.com"><img src="../img/redes/youtube.svg" alt="Logo de YouTube"></a>
         </div>
     
-        <a class="logo-wpp" href="https://web.whatsapp.com"><img src="../img/wpp.png" alt="Logo-Whatsapp"></a>
-        <a class="boton-arriba" href="#"><img src="../img/boton-arriba.png"
+        <a class="logo-wpp" href="https://web.whatsapp.com"><img src="../img/footer/wpp.webp" alt="Logo-Whatsapp"></a>
+        <a class="boton-arriba" href="#"><img src="../img/footer/boton-arriba.webp"
                 alt="Flecha hacia arriba, volver al principio de la página">
         </a>
     
@@ -158,6 +162,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

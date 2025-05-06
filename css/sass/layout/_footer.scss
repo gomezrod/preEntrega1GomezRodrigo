@@ -43,11 +43,18 @@
     justify-content: space-between;
 }
 
+.navegacion__footer li:hover img{
+    transition: border 1.2s 0.2s;
+    border: solid variables.$grisclaro 2px;
+}
+
 .footer-nav img {
     height: 35px;
     width: 35px;
     background-color: variables.$main-text-color;
     border-radius: 100%;
+    border: solid variables.$main-color-alternative 2px;
+    transition: border 0.8s 0.2s;
 }
 
 .redes img {

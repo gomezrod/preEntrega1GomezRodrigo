@@ -31,8 +31,7 @@ ul {
 }
 
 .logo {
-    width: 150px;
-    min-width: 150px;
+    width: 100px;
 }
 
 .titulo {
@@ -151,6 +150,28 @@ nav {
 
     &:hover::after{
         background: variables.$main-color;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .nav-derecha {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login {
+        position: relative;
+        margin-right: 3rem;
+        transition: 1s;
+    }
+
+    .login:hover {
+        position: relative;
+        margin-left: 4.5rem;
+        transition: 1s;
     }
 }
 
