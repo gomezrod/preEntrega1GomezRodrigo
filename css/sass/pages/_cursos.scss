@@ -6,7 +6,34 @@
 }
 
 .cursos__titulo--principal {
-    padding-top: 150px;
+    padding: 20rem 0 22rem 0;
+    background-image: url(../../../img/banner.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative;
+}
+
+.screen-black {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    
+
+    h2 {
+        color: variables.$blanco;
+        font-size: 3rem;
+        align-self: center;
+        z-index: 5;
+    }
 }
 
 .cursos__titulo {

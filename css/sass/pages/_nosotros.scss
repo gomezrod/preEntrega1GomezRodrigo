@@ -33,7 +33,7 @@
         height: 60vh;
         width: 80vw;
         object-fit: cover;
-        box-shadow: 0.5rem 1rem 1rem 1rem variables.$negro;    
+        box-shadow: 0rem 0 5rem 3rem variables.$negro;    
     }
 }
 
@@ -118,6 +118,10 @@
     grid-area: testimonios;
 
 } */
+
+.nosotros-articulo {
+    overflow-x: hidden;
+}
 
 .nosotros-contenedor-contenido {
     padding: 10px;
