@@ -21,11 +21,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    // background-image: url('../../../img/banner.webp');
+    // background-attachment: fixed;
 }
 
 .contenedor-video {
     display: flex;
     align-items: center;
+
+    video {
+        height: 60vh;
+        width: 80vw;
+        object-fit: cover;
+        box-shadow: 0.5rem 1rem 1rem 1rem variables.$negro;    
+    }
 }
 
 .video-institucional {
@@ -115,7 +124,7 @@
 }
 
 .nosotros-articulo-contenido {
-    padding-top: 150px;
+    padding-top: 1rem;
     display: flex;
     flex-direction: row;
 }

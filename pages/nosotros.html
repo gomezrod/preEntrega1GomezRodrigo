@@ -7,6 +7,7 @@
     <title>Forja Oeste</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -65,11 +66,12 @@
 
     <main class="container nosotros-contenedor-main">
         <section class="nosotros-contenedor-portada">
-            <article id="contenedor-video">
-                <iframe class="video-institucional" src="https://www.youtube.com/embed/Y6GS8yc23t0?si=POsVhtA6YqQZl25A"
+            <article class="contenedor-video">
+                <!-- <iframe class="video-institucional" src="https://www.youtube.com/embed/Y6GS8yc23t0?si=POsVhtA6YqQZl25A"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <video src="../video/portada_vid.mp4" muted="1" autoplay="1" loop="1">Video no soportado</video>
             </article>
         </section>
 
@@ -198,7 +200,7 @@
 
         <section class="container nosotros-contenedor-contenido">
             <article class="nosotros-articulo row col-12">
-                <div class="nosotros-articulo-contenido" id="fundacion">
+                <div data-aos-offset="200" data-aos="fade-right" class="nosotros-articulo-contenido" id="fundacion">
                     <div class="nosotros-articulo-contenido-texto">
                         <h2 id="historia">Historia</h2>
                         <h3>Fundación</h3>
@@ -211,7 +213,7 @@
                     <img src="../img/history.png" alt="Fotografía antigua de la empresa">
                 </div>
 
-                <div class="nosotros-articulo-contenido" id="hitos">
+                <div data-aos-offset="200" data-aos="fade-left" class="nosotros-articulo-contenido" id="hitos">
                     <div class="nosotros-articulo-contenido-texto nosotros--hitos">
                         <h3>Hitos</h3>
                         <p><strong>1986:</strong> Inicio de la construcción del edificio actual.</p>
@@ -225,11 +227,11 @@
 
             <article class="nosotros-articulo row col-12">
                 
-                <div class="nosotros-articulo-contenido" id="liderazgo">
+                <div data-aos-offset="200" data-aos="fade-right" class="nosotros-articulo-contenido" id="liderazgo">
                     <div class="nosotros-articulo-contenido-texto">
                         <h2 id="equipo">Nuestro Equipo</h2>
                         <h3>Liderazgo</h3>
-                        <p>La dirección actual de Forja Oeste está a cargo de Raúl Eugenio Gómez, hijo del fundador y actual CEO de la empresa.
+                        <p>La dirección actual de Forja Oeste está a cargo de Raúl Eugenio Gómez, hijo del fundador y actual director ejecutivo de la empresa.
                         Nacido en 1966, Raúl Eugenio comenzó a involucrarse en el negocio familiar desde muy joven, formalizando su
                         incorporación en 1988, coincidiendo con un período clave de crecimiento para la herrería.
                         </p>
@@ -240,7 +242,7 @@
                         </p>
                         <p>
                             En 2025, motivado por la pasión heredada por el oficio y el deseo de recuperar el legado familiar, tomó la decisión de
-                            retomar la dirección de la empresa, que había quedado sin conducción clara. Bajo su liderazgo, Forja Oeste experimenta
+                            retomar la dirección de la empresa, que había quedado sin conducción clara luego de la defunción de su último director. Bajo su liderazgo, Forja Oeste experimenta
                             un proceso de modernización y revitalización, con una clara apuesta por la innovación tecnológica y el desarrollo de
                             soluciones a medida.
                         </p>
@@ -253,7 +255,7 @@
                     <img src="../img/leadership.png" alt="Organigrama vertical de la jerarquía de la empresa">
                 </div>
 
-                <div class="nosotros-articulo-contenido" id="departamentos">
+                <div data-aos-offset="200" data-aos="fade-left" class="nosotros-articulo-contenido" id="departamentos">
                     <div class="nosotros-articulo-contenido-texto nosotros--departamentos">
                         <h3>Departamentos</h3>
                         <p>
@@ -277,7 +279,7 @@
             </article>
 
             <article class="nosotros-articulo">
-                <div class="nosotros-articulo-contenido" id="mision">
+                <div data-aos-offset="200" data-aos="fade-left" class="nosotros-articulo-contenido" id="mision">
                     <div class="nosotros-articulo-contenido-texto">
                         <h2>Misión y valores</h2>
                         <h3>Nuestra Misión</h3>
@@ -286,7 +288,7 @@
                     </div>
                     <img src="../img/mision2.png" alt="Piezas de rompecabezas">
                 </div>
-                <div class="nosotros-articulo-contenido" id="vision">
+                <div data-aos-offset="200" data-aos="fade-right" class="nosotros-articulo-contenido" id="vision">
                     <div class="nosotros-articulo-contenido-texto">
                         <h3>Nuestra Visión</h3>
                         <p>
@@ -295,7 +297,7 @@
                     </div>
                     <img src="../img/vision.png" alt="Piezas de rompecabezas">
                 </div>
-                <div class="nosotros-articulo-contenido" id="valores">
+                <div data-aos-offset="200" data-aos="fade-left" class="nosotros-articulo-contenido" id="valores">
                     <div class="nosotros-articulo-contenido-texto">
                         <h3>Nuestros Valores</h3>
                         <p>
@@ -324,7 +326,7 @@
             </article>
 
             <article class="nosotros-articulo row col-12">
-                <div class="nosotros-articulo-contenido" id="testimonios">
+                <div data-aos-offset="200" data-aos="fade-up" class="nosotros-articulo-contenido" id="testimonios">
                     <h2 class="testimonios-title">Testimonios</h2>
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
@@ -410,8 +412,11 @@
         </div>
     
         <a class="logo-wpp" href="https://web.whatsapp.com"><img src="../img/wpp.png" alt="Logo-Whatsapp"></a>
-        <a class="boton-arriba" href="#"><img src="../img/boton-arriba.png" alt="Flecha hacia arriba, volver al principio de la página">
-        </a>
+        <div data-aos="fade-up" data-aos-offset="500" data-aos-anchor="#historia" data-aos-easing="ease-in-out">
+            <a class="boton-arriba" href="#">
+                <img src="../img/boton-arriba.png" alt="Flecha hacia arriba, volver al principio de la página">
+            </a>
+        </div>
     
         <span> &copy; 2025 Rodrigo Gómez. Todos los derechos reservados</span>
     </footer>
@@ -419,6 +424,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
