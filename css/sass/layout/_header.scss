@@ -6,7 +6,6 @@ ul {
 
 .header {
     width: 100%;
-    height: 130px;
     background-color: variables.$grisclaro;
     display: flex;
     justify-content: space-around;
@@ -14,7 +13,7 @@ ul {
 }
 
 .contenedor-header {
-    height: 20vh;
+    height: 15vh;
     position: fixed;
     z-index: 3;
     display: flex;
@@ -36,7 +35,7 @@ nav {
 }
 
 .navbar-brand {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -64,7 +63,7 @@ nav {
 }
 
 .titulo {
-    font-size: 3vh;
+    font-size: 3.5vh;
     color: variables.$main-color;
     padding-left: 1rem;
     transition: 0.7s 0.1s ease-out;
@@ -79,7 +78,7 @@ nav {
 }
 
 .navbar-toggler {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     &-icon {
         height: 5vh;
         width: 5vh;
@@ -158,12 +157,12 @@ nav {
 
 .contenedor-nav {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     padding: 10px 30px;
 
-    @media (max-width: 768px) {
-        flex-flow: column nowrap;
+    @media (min-width: 768px) {
+        flex-flow: row nowrap;
 
         li {
             padding: 0.5rem;
@@ -174,14 +173,18 @@ nav {
 .contenedor-nav li {
     display: flex;
     justify-content: center;
-    margin: 0 1rem;
+    margin: 0 0.2rem;
 }
 
 .contenedor-nav a {
     text-decoration: none;
     color: variables.$main-color;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1.4rem;
+
+    @media (min-width: 992px) {
+        font-size: 1.2rem;
+    }
 
     &:hover{
         color: variables.$negro;
