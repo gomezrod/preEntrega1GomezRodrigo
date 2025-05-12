@@ -16,11 +16,6 @@
     padding: 0;
 }
 
-.navbar-brand {
-    display: flex;
-    align-items: center;
-}
-
 .accordion-button:not(.collapsed) {
     z-index: 1;
     color: variables.$blanco;
