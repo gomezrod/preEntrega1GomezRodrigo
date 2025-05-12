@@ -2,10 +2,10 @@
 
 .cursos-main {
     background-color: variables.$negro;
-    padding: 20px;
 }
 
 .cursos-container {
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
