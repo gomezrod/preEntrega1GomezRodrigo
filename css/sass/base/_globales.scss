@@ -10,10 +10,24 @@ body {
     color: variables.$main-text-color;
     font-family: variables.$main-font;
     font-size: 62.5%;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+}
+
+main {
+    background-color: variables.$main-color-alternative;
+    min-height: 80vh;
+
+    @media (min-width: 1200px) {
+        width: 1200px;
+        align-self: center;
+    }
+
+    @media (min-width: 2400px) {
+        height: 90vh;
+    }
 }
 
 h3 {

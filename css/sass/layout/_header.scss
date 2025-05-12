@@ -4,72 +4,60 @@ ul {
     list-style: none;
 }
 
+.header {
+    width: 100%;
+    height: 130px;
+    background-color: variables.$grisclaro;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+
 .contenedor-header {
     position: fixed;
     z-index: 3;
     display: flex;
     flex-flow: column wrap;
-    background-color: variables.$main-color-alternative;
+    background-color: variables.$grisclaro;
     width: 100%;
-}
-
-.contenedor-banner {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    color: variables.$negro;
-    /* background-image: url('../img/banner.webp');
-    background-size: cover; */
-}
-
-.banner-izquierda {
-    display: flex;
-    height: 100%;
-    width: 60%;
 }
 
 .logo {
     width: 100px;
 }
 
+.navbar-brand.active {
+    .titulo {
+        font-size: 1.7rem;
+        color: variables.$negro;
+        font-weight: 700;
+    }
+}
+
 .titulo {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin-left: 30px;
-}
-
-.navbar-brand {
     color: variables.$main-color;
-    font-size: 1.5rem;
+    padding-left: 1rem;
+    transition: 0.7s 0.1s ease-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
-.brand-bold {
+.titulo--bold {
     font-weight: bolder;
 }
 
-.banner-derecha {
-    height: 100%;
-    display: flex;
-    flex-flow: column-reverse wrap;
-    justify-content: space-around;
-}
+.nav-derecha {
 
-.buscador {
-    height: 70%;
-    display: flex;
-    flex-flow: row nowrap;
+    justify-content: center;
     align-items: center;
-}
+    display: flex;
+    flex-direction: column;
 
-.buscador input {
-    padding: 10px;
-    height: 40px;
-    border: solid;
-    border-radius: 10px;
-    margin: 10px;
+    @media (min-width: 992px) {
+        align-items: end;
+    }
 }
 
 .boton-busqueda {
@@ -94,6 +82,9 @@ ul {
     flex-flow: row;
     align-items: center;
     justify-content: end;
+    position: relative;
+    transition: 1s;
+    margin-right: 1rem;
 }
 
 .login a {
@@ -111,6 +102,8 @@ ul {
     position: relative;
     margin-right: 0.3rem;
     color: variables.$main-color;
+    position: relative;
+    margin-left: 4.5rem;
 }
 
 .login svg {
@@ -125,11 +118,26 @@ nav {
     background-color: variables.$main-text-light;
 }
 
+.navbar {
+    @media (min-width: 1200px) {
+        width: 1200px;
+        align-self: center;
+    }
+}
+
 .contenedor-nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 10px 30px;
+
+    @media (max-width: 768px) {
+        flex-flow: column nowrap;
+
+        li {
+            padding: 0.5rem;
+        }
+    }
 }
 
 .contenedor-nav li {
@@ -153,52 +161,13 @@ nav {
     }
 }
 
-@media (max-width: 1200px) {
-
-    .nav-derecha {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .login {
-        position: relative;
-        margin-right: 3rem;
-        transition: 1s;
-    }
-
-    .login:hover {
-        position: relative;
-        margin-left: 4.5rem;
-        transition: 1s;
-    }
+#active {
+    color: variables.$negro;
+    transform: scale(1.1);
 }
 
-@media (max-width: 992px) {
-    .contenedor-nav {
-        flex-flow: column nowrap;
-        li {
-            padding: 0.5rem;
-        }
-    }
-
-    .nav-derecha {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .login {
-        position: relative;
-        margin-right: 3rem;
-        transition: 1s;
-    }
-
-    .login:hover {
-        position: relative;
-        margin-left: 4.5rem;
-        transition: 1s;
-    }
+#active::after {
+    opacity: 1;
+    transform: scale(1);
+    background: variables.$main-color;
 }

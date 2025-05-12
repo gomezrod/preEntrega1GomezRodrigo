@@ -2,23 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forja Oeste</title>
+    <!-- HTML Meta Tags -->
+    <title>Cursos | Forja Oeste</title>
+    <meta name="description"
+        content="Somos especialistas en trabajos de soldadura, diseño de estructuras, aberturas, rejas, automatizaciones, portones y cortinas metálicas.">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.gomezrodrigo.com.ar/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Forja Oeste: Herrería y Trabajos de Soldadura">
+    <meta property="og:description"
+        content="Somos especialistas en trabajos de soldadura, diseño de estructuras, aberturas, rejas, automatizaciones, portones y cortinas metálicas.">
+    <meta property="og:image"
+        content="https://opengraph.b-cdn.net/production/images/63add246-270b-444b-a382-811a2a8aca22.png?token=eiRT0J9CBOwnmfCD97edPyzJnOq9j76A-RVPR8d7wbg&height=1024&width=1024&expires=33282571254">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="gomezrodrigo.com.ar">
+    <meta property="twitter:url" content="https://www.gomezrodrigo.com.ar/">
+    <meta name="twitter:title" content="Forja Oeste: Herrería y Trabajos de Soldadura">
+    <meta name="twitter:description"
+        content="Somos especialistas en trabajos de soldadura, diseño de estructuras, aberturas, rejas, automatizaciones, portones y cortinas metálicas.">
+    <meta name="twitter:image"
+        content="https://opengraph.b-cdn.net/production/images/63add246-270b-444b-a382-811a2a8aca22.png?token=eiRT0J9CBOwnmfCD97edPyzJnOq9j76A-RVPR8d7wbg&height=1024&width=1024&expires=33282571254">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header class="contenedor-header">
-    
-        <nav class="navbar navbar-expand-xl bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" aria-current="page" href="../index.html">
-                    <img src="../img/logo.webp" alt="Logo" width="100" class="d-inline-block align-text-center">
-                    Forja<span class="brand-bold">Oeste</span>
+                    <img src="../img/logo.webp" alt="Logo" class="logo d-inline-block align-text-center">
+                    <div class="titulo">
+                        Forja<span class="titulo--bold">Oeste</span>
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -60,44 +96,42 @@
     
             </div>
         </nav>
-    
     </header>
 
     <main class="cursos-main">
         <section class="container cursos-container">
             
-                <div data-aos-offset="200" data-aos="fade-up" data-aos-duration="1500" class="cursos__titulo--principal">
-                    <div class="screen-black">
-                        <h2>Nuestros cursos</h2>
-                    </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="cursos__titulo--principal">
+                <div class="cursos__screen-black">
+                    <h2>Nuestros cursos</h2>
                 </div>
+            </div>
 
-            <article class="container cursos-contenedor-article">
+            <article data-aos="fade-right" class="container cursos-contenedor-article">
                 <h3 class="cursos__titulo">Curso 1: Soldadura con arco</h3>
                 <div class="cursos-article">
                     <div class="cursos-article-grafico">
                             <img src="../img/cursos/curso_1.webp" alt="Imagen de curso 1: soldador soldando">
                     </div>
                     <div class="cursos-article-texto">
-                            <p>
-                                Fundamentos de la soldadura:
-                                Conceptos básicos sobre el proceso de soldadura con arco, tipos de soldadura, materiales y equipos.
-                                Tipos de electrodos:
-                                Aprendizaje sobre diferentes tipos de electrodos, sus características y aplicaciones.
-                                Equipamiento:
-                                Familiarización con las máquinas de soldar, cables, abrazaderas y otros equipos necesarios.
-                                Técnicas de soldadura:
-                                Práctica de diferentes técnicas de soldadura en distintas posiciones (plana, vertical, horizontal, etc.).
-                            </p>
-                            <button class="cursos-boton-inscribirse btn">
-                                <a href="#">Inscribirse</a>
-                            </button>
+                        <p>
+                            Fundamentos de la soldadura:
+                            Conceptos básicos sobre el proceso de soldadura con arco, tipos de soldadura, materiales y equipos.
+                            Tipos de electrodos:
+                            Aprendizaje sobre diferentes tipos de electrodos, sus características y aplicaciones.
+                            Equipamiento:
+                            Familiarización con las máquinas de soldar, cables, abrazaderas y otros equipos necesarios.
+                            Técnicas de soldadura:
+                            Práctica de diferentes técnicas de soldadura en distintas posiciones (plana, vertical, horizontal, etc.).
+                        </p>
+                        <button class="cursos-boton-inscribirse btn">
+                            <a href="#">Inscribirse</a>
+                        </button>
                     </div>
-                </div>
-                    
+                </div>   
             </article>
 
-            <article class="container cursos-contenedor-article">
+            <article data-aos="fade-left" class="container cursos-contenedor-article" id="subir-flag">
                 <h3 class="cursos__titulo">Curso 2: Inspección de soldadura</h3>
                 <div class="cursos-article2">
                     <div class="cursos-article-grafico">
@@ -116,7 +150,7 @@
             
             </article>
 
-            <article class="container cursos-contenedor-article">
+            <article data-aos="fade-right" class="container cursos-contenedor-article">
                 <h3 class="cursos__titulo">Curso 3: Soldadura TIG</h3>
                 <div class="cursos-article">
                     <div class="cursos-article-grafico">
@@ -165,22 +199,24 @@
                 </li>
             </ul>
         </nav>
+        <div class="contenedor-footer">
     
-        <a href="#" class="enlace__navbar">Volver arriba</a>
+            <a href="#" class="enlace__navbar">Volver arriba</a>
     
-        <div class="redes">
-            <a href="https://linkedin.com"><img src="../img/redes/linkedin.svg" alt="Logo de Linkedin"></a>
-            <a href="https://instagram.com"><img src="../img/redes/instagram.svg" alt="Logo de Instagram"></a>
-            <a href="https://x.com"><img src="../img/redes/twitter-alt.svg" alt="Logo de X"></a>
-            <a href="https://youtube.com"><img src="../img/redes/youtube.svg" alt="Logo de YouTube"></a>
+            <div class="redes">
+                <a href="https://linkedin.com"><img src="../img/redes/linkedin.svg" alt="Logo de Linkedin"></a>
+                <a href="https://instagram.com"><img src="../img/redes/instagram.svg" alt="Logo de Instagram"></a>
+                <a href="https://x.com"><img src="../img/redes/twitter-alt.svg" alt="Logo de X"></a>
+                <a href="https://youtube.com"><img src="../img/redes/youtube.svg" alt="Logo de YouTube"></a>
+            </div>
+    
+            <a class="logo-wpp" href="https://web.whatsapp.com"><img src="../img/footer/wpp.webp" alt="Logo-Whatsapp"></a>
+            <a data-aos="fade-up" data-aos-offset="0" data-aos-anchor="#subir-flag" class="boton-arriba" href="#"><img src="../img/footer/boton-arriba-bl.webp"
+                    alt="Flecha hacia arriba, volver al principio de la página">
+            </a>
+    
+            <span> &copy; 2025 Rodrigo Gómez. Todos los derechos reservados</span>
         </div>
-    
-        <a class="logo-wpp" href="https://web.whatsapp.com"><img src="../img/footer/wpp.webp" alt="Logo-Whatsapp"></a>
-        <a class="boton-arriba" href="#"><img src="../img/footer/boton-arriba-bl.webp"
-                alt="Flecha hacia arriba, volver al principio de la página">
-        </a>
-    
-        <span> &copy; 2025 Rodrigo Gómez. Todos los derechos reservados</span>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
@@ -188,7 +224,10 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            offset: 200
+        });
     </script>
 </body>
 

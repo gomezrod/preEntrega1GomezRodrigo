@@ -16,10 +16,9 @@
     padding: 0;
 }
 
-.navbar-brand.active {
-    font-size: 1.7rem;
-    color: variables.$negro;
-    font-weight: 900;
+.navbar-brand {
+    display: flex;
+    align-items: center;
 }
 
 .accordion-button:not(.collapsed) {

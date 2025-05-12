@@ -2,24 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forja Oeste</title>
+    <!-- HTML Meta Tags -->
+    <title>Nuestra empresa | Forja Oeste</title>
+    <meta name="description"
+        content="Somos especialistas en trabajos de soldadura, diseño de estructuras, aberturas, rejas, automatizaciones, portones y cortinas metálicas.">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.gomezrodrigo.com.ar/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Forja Oeste: Herrería y Trabajos de Soldadura">
+    <meta property="og:description"
+        content="Somos especialistas en trabajos de soldadura, diseño de estructuras, aberturas, rejas, automatizaciones, portones y cortinas metálicas.">
+    <meta property="og:image"
+        content="https://opengraph.b-cdn.net/production/images/63add246-270b-444b-a382-811a2a8aca22.png?token=eiRT0J9CBOwnmfCD97edPyzJnOq9j76A-RVPR8d7wbg&height=1024&width=1024&expires=33282571254">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="gomezrodrigo.com.ar">
+    <meta property="twitter:url" content="https://www.gomezrodrigo.com.ar/">
+    <meta name="twitter:title" content="Forja Oeste: Herrería y Trabajos de Soldadura">
+    <meta name="twitter:description"
+        content="Somos especialistas en trabajos de soldadura, diseño de estructuras, aberturas, rejas, automatizaciones, portones y cortinas metálicas.">
+    <meta name="twitter:image"
+        content="https://opengraph.b-cdn.net/production/images/63add246-270b-444b-a382-811a2a8aca22.png?token=eiRT0J9CBOwnmfCD97edPyzJnOq9j76A-RVPR8d7wbg&height=1024&width=1024&expires=33282571254">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="contenedor-body">
 
     <header class="contenedor-header">
-    
-        <nav class="navbar navbar-expand-xl bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" aria-current="page" href="../index.html">
-                    <img src="../img/logo.webp" alt="Logo" width="100" class="d-inline-block align-text-center">
-                    Forja<span class="brand-bold">Oeste</span>
+                    <img src="../img/logo.webp" alt="Logo" class="logo d-inline-block align-text-center">
+                    <div class="titulo">
+                        Forja<span class="titulo--bold">Oeste</span>
+                    </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -29,7 +64,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="contenedor-nav navbar-nav mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link enlace__navbar" id="active" href="./nosotros.html">Nosotros</a>
+                            <a class="nav-link enlace__navbar" href="./nosotros.html" id="active">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link enlace__navbar" href="./cursos.html">Cursos</a>
@@ -61,12 +96,11 @@
     
             </div>
         </nav>
-    
     </header>
 
     <main class="container nosotros-contenedor-main">
         <section class="nosotros-contenedor-portada">
-            <article class="contenedor-video">
+            <article data-aos="fade-up" data-aos-duration="2000" class="contenedor-video">
                 <!-- <iframe class="video-institucional" src="https://www.youtube.com/embed/Y6GS8yc23t0?si=POsVhtA6YqQZl25A"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -75,7 +109,7 @@
             </article>
         </section>
 
-        <section class="container-fluid">
+        <section data-aos="fade-up" data-aos-duration="2000" class="container-fluid">
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
@@ -200,7 +234,7 @@
 
         <section class="container nosotros-contenedor-contenido">
             <article class="nosotros-articulo row col-12">
-                <div data-aos-offset="200" data-aos="fade-left" class="nosotros-articulo-contenido" id="fundacion">
+                <div data-aos="fade-left" class="nosotros-articulo-contenido" id="fundacion">
                     <div class="nosotros-articulo-contenido-texto">
                         <h2 id="historia">Historia</h2>
                         <h3>Fundación</h3>
@@ -213,7 +247,7 @@
                     <img src="../img/nosotros/history.webp" alt="Fotografía antigua de la empresa">
                 </div>
 
-                <div data-aos-offset="200" data-aos="fade-right" class="nosotros-articulo-contenido" id="hitos">
+                <div data-aos="fade-right" class="nosotros-articulo-contenido" id="hitos">
                     <div class="nosotros-articulo-contenido-texto nosotros--hitos">
                         <h3>Hitos</h3>
                         <p><strong>1986:</strong> Inicio de la construcción del edificio actual.</p>
@@ -227,7 +261,7 @@
 
             <article class="nosotros-articulo row col-12">
                 
-                <div data-aos-offset="200" data-aos="fade-left" class="nosotros-articulo-contenido" id="liderazgo">
+                <div data-aos="fade-left" class="nosotros-articulo-contenido" id="liderazgo">
                     <div class="nosotros-articulo-contenido-texto">
                         <h2 id="equipo">Nuestro Equipo</h2>
                         <h3>Liderazgo</h3>
@@ -255,7 +289,7 @@
                     <img src="../img/nosotros/leadership.webp" alt="Organigrama vertical de la jerarquía de la empresa">
                 </div>
 
-                <div data-aos-offset="200" data-aos="fade-right" class="nosotros-articulo-contenido" id="departamentos">
+                <div data-aos="fade-right" class="nosotros-articulo-contenido" id="departamentos">
                     <div class="nosotros-articulo-contenido-texto nosotros--departamentos">
                         <h3>Departamentos</h3>
                         <p>
@@ -279,7 +313,7 @@
             </article>
 
             <article class="nosotros-articulo">
-                <div data-aos-offset="200" data-aos="fade-left" class="nosotros-articulo-contenido" id="mision">
+                <div data-aos="fade-left" class="nosotros-articulo-contenido" id="mision">
                     <div class="nosotros-articulo-contenido-texto">
                         <h2>Misión y valores</h2>
                         <h3>Nuestra Misión</h3>
@@ -288,7 +322,7 @@
                     </div>
                     <img src="../img/nosotros/mision2.webp" alt="Piezas de rompecabezas">
                 </div>
-                <div data-aos-offset="200" data-aos="fade-right" class="nosotros-articulo-contenido" id="vision">
+                <div data-aos="fade-right" class="nosotros-articulo-contenido" id="vision">
                     <div class="nosotros-articulo-contenido-texto">
                         <h3>Nuestra Visión</h3>
                         <p>
@@ -297,7 +331,7 @@
                     </div>
                     <img src="../img/nosotros/vision.webp" alt="Piezas de rompecabezas">
                 </div>
-                <div data-aos-offset="200" data-aos="fade-left" class="nosotros-articulo-contenido" id="valores">
+                <div data-aos="fade-left" class="nosotros-articulo-contenido" id="valores">
                     <div class="nosotros-articulo-contenido-texto">
                         <h3>Nuestros Valores</h3>
                         <p>
@@ -326,7 +360,7 @@
             </article>
 
             <article class="nosotros-articulo row col-12">
-                <div data-aos-offset="200" data-aos="fade-up" class="nosotros-articulo-contenido" id="testimonios">
+                <div data-aos="fade-up" class="nosotros-articulo-contenido" id="testimonios">
                     <h2 class="testimonios-title">Testimonios</h2>
                     <div id="carouselExample" class="carousel slide">
                         <div class="carousel-inner">
@@ -336,7 +370,7 @@
                                         <p>"...Realmente son profesionales del oficio, solucionaron un problema que tenía hace años con un portón corredizo y desde entonces no volvió a suceder..."</p>
                                         <p class="autor-testimonio">-W. Chacón</p>
                                     </div>
-                                    <img src="../img/testimonios_5star.png" alt="Ranking de estrellas: 5/5">
+                                    <img src="../img/nosotros/testimonios_5star.webp" alt="Ranking de estrellas: 5/5">
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -345,7 +379,7 @@
                                         <p>"...Quedé sumamente satisfecha con su atención y profesionalismo. Los contacté por un servicio de automatización y superaron mis expectativas..."</p>
                                         <p class="autor-testimonio">-M. Villarreal</p>
                                     </div>
-                                    <img src="../img/testimonios_5star.png" alt="Ranking de estrellas: 5/5">
+                                    <img src="../img/nosotros/testimonios_5star.webp" alt="Ranking de estrellas: 5/5">
                                 </div>
                             </div>
                             <div class="carousel-item">
@@ -401,22 +435,24 @@
                 </li>
             </ul>
         </nav>
+        <div class="contenedor-footer">
     
-        <a href="#" class="enlace__navbar">Volver arriba</a>
+            <a href="#" class="enlace__navbar">Volver arriba</a>
     
-        <div class="redes">
-            <a href="https://linkedin.com"><img src="../img/redes/linkedin.svg" alt="Logo de Linkedin"></a>
-            <a href="https://instagram.com"><img src="../img/redes/instagram.svg" alt="Logo de Instagram"></a>
-            <a href="https://x.com"><img src="../img/redes/twitter-alt.svg" alt="Logo de X"></a>
-            <a href="https://youtube.com"><img src="../img/redes/youtube.svg" alt="Logo de YouTube"></a>
+            <div class="redes">
+                <a href="https://linkedin.com"><img src="../img/redes/linkedin.svg" alt="Logo de Linkedin"></a>
+                <a href="https://instagram.com"><img src="../img/redes/instagram.svg" alt="Logo de Instagram"></a>
+                <a href="https://x.com"><img src="../img/redes/twitter-alt.svg" alt="Logo de X"></a>
+                <a href="https://youtube.com"><img src="../img/redes/youtube.svg" alt="Logo de YouTube"></a>
+            </div>
+    
+            <a class="logo-wpp" href="https://web.whatsapp.com"><img src="../img/footer/wpp.webp" alt="Logo-Whatsapp"></a>
+            <a data-aos="fade-up" data-aos-anchor="#fundacion" class="boton-arriba" href="#"><img src="../img/footer/boton-arriba-bl.webp"
+                    alt="Flecha hacia arriba, volver al principio de la página">
+            </a>
+    
+            <span> &copy; 2025 Rodrigo Gómez. Todos los derechos reservados</span>
         </div>
-    
-        <a class="logo-wpp" href="https://web.whatsapp.com"><img src="../img/footer/wpp.webp" alt="Logo-Whatsapp"></a>
-        <a class="boton-arriba" href="#"><img src="../img/footer/boton-arriba.webp"
-                alt="Flecha hacia arriba, volver al principio de la página">
-        </a>
-    
-        <span> &copy; 2025 Rodrigo Gómez. Todos los derechos reservados</span>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
@@ -424,7 +460,10 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            offset: 200
+        });
     </script>
 </body>
 

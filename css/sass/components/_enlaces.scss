@@ -30,14 +30,3 @@
     transform: scale(1);
 }
 
-#active {
-    color: variables.$negro;
-    transform: scale(1.1);
-}
-
-#active::after {
-    opacity: 1;
-    transform: scale(1);
-    background: variables.$main-color;
-}
-
