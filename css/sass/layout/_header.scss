@@ -163,17 +163,13 @@ nav {
 
     @media (min-width: 768px) {
         flex-flow: row nowrap;
-
-        li {
-            padding: 0.5rem;
-        }
     }
 }
 
 .contenedor-nav li {
     display: flex;
     justify-content: center;
-    margin: 0 0.2rem;
+    margin: 0.5rem 0.2rem;
 }
 
 .contenedor-nav a {

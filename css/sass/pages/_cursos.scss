@@ -9,16 +9,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .cursos__titulo--principal {
     margin-top: 50px;
     background-image: url(../../../img/banner.webp);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
     background-attachment: fixed;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     position: relative;
     overflow-x: hidden;
 
@@ -69,14 +71,14 @@
 
 .cursos-article {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: variables.$main-color-alternative;
 }
 
 .cursos-article2 {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -92,39 +94,38 @@
 }
 
 .cursos-article-texto {
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: justify;
-    max-width: 40vw;
+    width: 90%;
 
 }
 
 .cursos-boton-inscribirse {
-    color: variables.$negro;
     border: variables.$main-color;
-    background-color: variables.$main-text-light;
+    background-color: variables.$main-text-color;
     margin-right: 10px;
+
+    a {
+        color: variables.$main-color-alternative;
+    }
 }
 
 .cursos-boton-inscribirse:hover {
-    background-color: variables.$main-text-color;
+    background-color: variables.$grisclaro;
     cursor: pointer;
 }
 
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
     .cursos-article {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .cursos-article2 {
-        flex-direction: column;
-    }
-
-    .cursos-article-texto {
-        max-width: 90%;
+        flex-direction: row-reverse;
     }
 
 }

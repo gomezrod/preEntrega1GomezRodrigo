@@ -9,7 +9,7 @@
     width: 100%;
     background-color: variables.$main-color;
     margin-bottom: 1rem;
-    padding: 1.5rem 1rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .navegacion__footer {
@@ -18,7 +18,7 @@
     flex-wrap: nowrap;
     align-items: center;
     width: 100%;
-    padding: 10px 20px 15px 20px;
+    padding-top: 1rem;
 
     li {
             padding: 0.5rem;
@@ -60,12 +60,16 @@
 
 .redes {
     display: flex;
-    padding: 1rem 0;
-    width: 40%;
+    padding: 0.5rem 5rem;
+    width: 100%;
     justify-content: space-between;
 
     a {
         padding: 1rem;
+    }
+
+    @media (min-width: 768px) {
+        padding: 0.5rem 15rem;
     }
 }
 

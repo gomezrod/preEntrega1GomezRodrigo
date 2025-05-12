@@ -64,7 +64,7 @@ p {
   width: 100%;
   background-color: #532B88;
   margin-bottom: 1rem;
-  padding: 1.5rem 1rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .navegacion__footer {
@@ -73,7 +73,7 @@ p {
   flex-wrap: nowrap;
   align-items: center;
   width: 100%;
-  padding: 10px 20px 15px 20px;
+  padding-top: 1rem;
 }
 .navegacion__footer li {
   padding: 0.5rem;
@@ -117,12 +117,17 @@ p {
 
 .redes {
   display: flex;
-  padding: 1rem 0;
-  width: 40%;
+  padding: 0.5rem 5rem;
+  width: 100%;
   justify-content: space-between;
 }
 .redes a {
   padding: 1rem;
+}
+@media (min-width: 768px) {
+  .redes {
+    padding: 0.5rem 15rem;
+  }
 }
 
 .navegacion__footer li:hover img {
@@ -346,15 +351,12 @@ nav {
   .contenedor-nav {
     flex-flow: row nowrap;
   }
-  .contenedor-nav li {
-    padding: 0.5rem;
-  }
 }
 
 .contenedor-nav li {
   display: flex;
   justify-content: center;
-  margin: 0 0.2rem;
+  margin: 0.5rem 0.2rem;
 }
 
 .contenedor-nav a {
@@ -632,16 +634,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .cursos__titulo--principal {
   margin-top: 50px;
   background-image: url(../../../img/banner.webp);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   overflow-x: hidden;
 }
@@ -691,14 +695,14 @@ body {
 
 .cursos-article {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   background-color: #2F184B;
 }
 
 .cursos-article2 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -714,35 +718,34 @@ body {
 }
 
 .cursos-article-texto {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
-  max-width: 40vw;
+  width: 90%;
 }
 
 .cursos-boton-inscribirse {
-  color: #000;
   border: #532B88;
-  background-color: #9B72CF;
+  background-color: #C8B1E4;
   margin-right: 10px;
+}
+.cursos-boton-inscribirse a {
+  color: #2F184B;
 }
 
 .cursos-boton-inscribirse:hover {
-  background-color: #C8B1E4;
+  background-color: #EAEAFF;
   cursor: pointer;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
   .cursos-article {
-    flex-direction: column;
+    flex-direction: row;
   }
   .cursos-article2 {
-    flex-direction: column;
-  }
-  .cursos-article-texto {
-    max-width: 90%;
+    flex-direction: row-reverse;
   }
 }
 main {
@@ -761,7 +764,7 @@ main {
 }
 
 .index__title {
-  margin-top: 24vh;
+  margin-top: 20vh;
   align-self: center;
   justify-self: center;
 }
@@ -1037,16 +1040,18 @@ main {
 .servicios-contenedor-article {
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .servicios__titulo--principal {
   margin-top: 50px;
   background-image: url(../../../img/img_1.webp);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   overflow-x: hidden;
 }
@@ -1081,7 +1086,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
   overflow-x: hidden;
   background-color: #2F184B;
 }
@@ -1112,7 +1117,8 @@ main {
   filter: invert(1);
 }
 .servicios-article-icono p {
-  padding: 0 2rem;
+  padding: 0;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .servicios-article-icono {
