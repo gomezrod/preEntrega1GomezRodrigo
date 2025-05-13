@@ -95,6 +95,7 @@ nav {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 
     @media (min-width: 992px) {
         align-items: end;
@@ -177,6 +178,7 @@ nav {
     color: variables.$main-color;
     font-weight: 700;
     font-size: 1.4rem;
+    padding: 1rem !important;
 
     @media (min-width: 992px) {
         font-size: 1.2rem;
