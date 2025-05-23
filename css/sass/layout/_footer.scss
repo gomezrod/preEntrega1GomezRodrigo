@@ -60,22 +60,20 @@
 
 .redes {
     display: flex;
-    padding: 0.5rem 1rem;
+    margin: 0.5rem 1rem;
     width: 100%;
     justify-content: space-between;
 
     a {
-        padding: 1rem;
-    }
-
-    @media (min-width: 768px) {
-        width: 50%;
-        padding: 0.5rem 15rem;
+        margin: 1rem;
     }
 
     @media (min-width: 480px) {
         width: 80%;
-        padding: 0.5rem 5rem;
+    }
+
+    @media (min-width: 768px) {
+        width: 30%;
     }
 }
 
@@ -95,12 +93,9 @@
 }
 
 .redes img {
-    background-color: variables.$main-text-color;
     padding: 0;
     border-radius: 20%;
-    width: 90%;
-    max-width: 45px;
-    min-width: 30px;
+    width: 40px;
     height: auto;
     transition: 1.2s;
 }
@@ -109,6 +104,10 @@
     transition: 0.6s;
     height: auto;
     transform: scale(1.2) ;
+}
+
+.redes{
+    filter: invert(100%);
 }
 
 .logo-wpp img {

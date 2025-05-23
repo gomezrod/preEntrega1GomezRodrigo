@@ -63,13 +63,18 @@ nav {
 }
 
 .titulo {
-    font-size: 3.5vh;
+    display: none;
+    font-size: 3vh;
     color: variables.$main-color;
     padding-left: 1rem;
     transition: 0.7s 0.1s ease-out;
 
     &:hover {
         transform: scale(1.1);
+    }
+
+    @media (min-width: 400px) {
+        display: inline;
     }
 }
 
